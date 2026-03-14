@@ -4,7 +4,7 @@ import logoLight from "./logo-light.svg";
 export function Welcome() {
   return (
     <section>
-      <h1>hi</h1>
+      <h1>hi home page</h1>
     </section>
   );
 }

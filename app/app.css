@@ -5,4 +5,6 @@
     "Inter", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --font-chewy: "Chewy", cursive, "Apple Color Emoji", "Segoe UI Emoji";
+  --font-coin: "Coiny", system-ui;
+  --font-quick: "Quicksand", sans-serif;
 }

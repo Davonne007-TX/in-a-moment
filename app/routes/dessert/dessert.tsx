@@ -5,7 +5,7 @@ import SecondHeader from "./components/SecondHeader";
 export default function Dessert() {
   const cardDescription = `Whether its 11am, to 11pm, its always a good time
    for ice cream! Here at Brain Freeze we have the best flavors in town!
-    From Oreo Blast, Neapolitan, Peanut Butter Cup, Cookie Dough and many more!
+    From Oreo Blast, Neapolitan, Peanut Butter Cup, and many more!
     Come on down and get your brain freeze on!`;
 
   return (
@@ -13,7 +13,7 @@ export default function Dessert() {
       <HeaderIceCream />
       <SecondHeader/>
       <Card
-        className="max-w-xs md:max-w-2xl flex flex-col gap-4 mt-20 p-6 rounded-4xl"
+        className="max-w-xs md:max-w-2xl flex flex-col gap-4 mt-20 p-8 ml-4 rounded-4xl"
         title="Its about that time! Ice Cream Time! "
         titleClassName="font-serif font-bold text-3xl lg:text-6xl"
         description={cardDescription}

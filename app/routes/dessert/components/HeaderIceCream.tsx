@@ -15,7 +15,14 @@ export default function () {
 
       <ul className="hidden lg:flex items-cente justify-center gap-10 text-xl font-sans tracking-widest">
         {ourLinks.map((links) => (
-          <li key={links.id}>{links.name}</li>
+          <motion.li
+            whileHover={{ color: "#13D4D4" }}
+            transition={{ duration: 0.15 }}
+            className="cursor-pointer"
+            key={links.id}
+          >
+            {links.name}
+          </motion.li>
         ))}
       </ul>
 

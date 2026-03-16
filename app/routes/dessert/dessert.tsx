@@ -11,7 +11,7 @@ export default function Dessert() {
     <section className="bg-[url('images/icecream.webp')] bg-cover bg-center bg-no-repeat min-h-screen w-full">
       <HeaderIceCream />
       <Card
-        className="max-w-xs md:max-w-3xl flex flex-col gap-4 mt-30 p-10 lg: ml-10 bg-neutral-100 shadow-md shadow-black"
+        className="max-w-xs md:max-w-2xl flex flex-col gap-4 mt-30 p-10 rounded-4xl ml-10 bg-neutral-100 shadow-md shadow-black"
         title="Its about that time! Ice Cream Time! "
         titleClassName="font-serif font-bold text-6xl lg:text-6xl"
         description={cardDescription}

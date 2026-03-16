@@ -10,7 +10,7 @@ export default function () {
   ];
 
   return (
-    <header className="bg-white w-full text-black p-8 border-2 border-black flex items-center justify-between">
+    <header className="bg-white w-full text-black p-6 border-2 border-black flex items-center justify-between">
       <h1 className="text-3xl md:text-5xl font-coin">Brain Freeze</h1>
 
       <ul className="hidden lg:flex items-center justify-center gap-10 text-xl font-sans tracking-widest">

@@ -3,24 +3,28 @@ import Card from "./components/Card";
 import SecondHeader from "./components/SecondHeader";
 
 export default function Dessert() {
-  const cardDescription = `Whether its 11am, to 11pm, its always a good time
-   for ice cream! Here at Brain Freeze we have the best flavors in town!
+  const cardDescription = `Its always a good time for ice cream! We have the best flavors in town!
     From Oreo Blast, Neapolitan, Peanut Butter Cup, and many more!
     Come on down and get your brain freeze on!`;
 
   return (
-    <section className="bg-[url('images/icecream.webp')] bg-cover bg-center bg-no-repeat min-h-screen w-full">
+    <main className="bg-[url('images/icecream.webp')] bg-cover bg-center bg-no-repeat min-h-screen w-full">
       <HeaderIceCream />
-      <SecondHeader/>
-      <Card
-        className="max-w-xs md:max-w-2xl flex flex-col gap-4 mt-20 p-8 ml-4 rounded-4xl"
-        title="Its about that time! Ice Cream Time! "
-        titleClassName="font-serif font-bold text-3xl lg:text-6xl"
-        description={cardDescription}
-        descriptionClassName="text-xl md:text-2xl tracking-wide font-quick leading-12"
-        action="Check out our flavors"
-        buttonClassName="bg-white font-bold p-2 skew-y-2 font-serif mt-2 text-2xl md:w-80 lg:w-90 shadow-md shadow-black hover:scale-105 hover:bg-blue-200 duration-300 cursor-pointer border-2 border-black"
-      />
-    </section>
+      <SecondHeader />
+      <section className="flex flex-col absolute">
+        <button className="bg-yellow-50 mt-20 ml-8 w-60 p-2 rounded-full font-coin">
+          HOMEMADE ICE CREAM
+        </button>
+        <Card
+          className="max-w-xs md:max-w-xl flex flex-col gap-4 p-8 rounded-4xl"
+          title="Ice Cream 4 Days "
+          titleClassName="font-serif flex flex-col font-bold text-3xl lg:text-8xl"
+          description={cardDescription}
+          descriptionClassName="text-xl md:text-2xl tracking-wide font-quick leading-9"
+          action="Check out our flavors"
+          buttonClassName="bg-white font-bold p-2 skew-y-2 font-serif mt-2 text-lg md:w-80 lg:w-60 shadow-md shadow-black hover:scale-105 hover:bg-blue-200 duration-300 cursor-pointer border-2 border-black"
+        />
+      </section>
+    </main>
   );
 }

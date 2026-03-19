@@ -10,9 +10,9 @@ export default function Header() {
   ];
 
   return (
-    <header className="bg-neutral-100 w-full text-black p-4 border-b-4 border-black">
+    <header className="bg-neutral-100 w-full text-black p-2 border-b-4 border-black">
       <div className="flex flex-col md:flex-row items-center justify-between">
-        <div className="flex flex-col gap-4">
+        <div className="flex flex-col gap-4 p-4">
           <h1 className="text-4xl md:text-5xl font-coin tracking-wider">
             Brain Freeze
           </h1>

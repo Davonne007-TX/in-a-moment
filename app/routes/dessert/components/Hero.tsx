@@ -15,9 +15,9 @@ export default function Hero() {
 
       <Card
         className="rounded-3xl p-8 shadow-xs"
-        title="Ice Cream 4 Days"
+        title="What time is it? Ice Cream Time!"
         titleClassName="font-coin font-bold text-5xl md:text-7xl bg-gradient-to-r from-pink-500 via-pink-500 to-pink-400 bg-clip-text text-transparent mb-4"
-        description="We are open 24/7, ice cream all day everyday!"
+        description="We are open 24/7, all day everyday!"
         descriptionClassName="text-lg md:text-xl tracking-wide  text-white font-quick leading-relaxed text-gray-700 mb-6"
         action={""}
         buttonClassName={""}

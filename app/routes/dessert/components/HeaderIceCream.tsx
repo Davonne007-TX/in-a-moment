@@ -4,48 +4,110 @@ export default function Header() {
   const ourLinks = [
     { name: "About Us", id: 0 },
     { name: "Menu", id: 1 },
-    { name: "Rewards", id: 2 },
-    { name: "Gift Cards", id: 3 },
+    { name: "Deals", id: 2 },
     { name: "Locations", id: 4 },
   ];
 
   return (
-    <header className="bg-neutral-100 w-full text-black p-2 border-b-4 border-black">
-      <div className="flex flex-col md:flex-row items-center justify-between">
-        <div className="flex flex-col gap-4 p-4">
-          <h1 className="text-4xl md:text-5xl font-coin tracking-wider">
-            Brain Freeze
-          </h1>
+    <header className="relative w-full bg-white/80 backdrop-blur-xl border-b border-white/20 shadow-lg">
+      <div className="mx-auto max-w-7xl px-4 py-6">
+        <div className="flex flex-col md:flex-row items-center justify-between">
+          {/* Logo and Brand */}
+          <motion.div
+            initial={{ opacity: 0, x: -20 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6 }}
+            className="flex flex-col items-center md:items-start mb-4 md:mb-0"
+          >
+            <motion.h1
+              whileHover={{ scale: 1.05 }}
+              className="text-4xl md:text-5xl font-coin tracking-wider bg-black/80 bg-clip-text text-transparent cursor-pointer"
+            >
+              Brain Freeze
+            </motion.h1>
+            <p className="text-sm font-quick text-gray-600 tracking-wide mt-1">
+              Ice Cream Shop
+            </p>
+          </motion.div>
 
-          <ul className="hidden lg:flex items-center gap-10 text-xl font-sans tracking-widest">
-            {ourLinks.map((links) => (
+          {/* Navigation Links */}
+          <motion.nav
+            initial={{ opacity: 0, y: -10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.1 }}
+            className="hidden lg:flex items-center gap-8 mb-4 md:mb-0"
+          >
+            {ourLinks.map((links, index) => (
               <motion.li
                 key={links.id}
-                whileHover={{ color: "#13D4D4", y: -2 }}
-                transition={{ duration: 0.15 }}
-                className="cursor-pointer"
+                initial={{ opacity: 0, y: -10 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.4, delay: 0.1 * index }}
+                whileHover={{
+                  y: -3,
+                  color: "#EC4899",
+                }}
+                className="list-none cursor-pointer font-quick font-medium text-gray-700 text-lg tracking-wide relative group"
               >
                 {links.name}
+                <motion.div
+                  className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-pink-400 to-purple-500 group-hover:w-full transition-all duration-300"
+                  whileHover={{ width: "100%" }}
+                />
               </motion.li>
             ))}
-          </ul>
+          </motion.nav>
+
+          {/* Action Buttons */}
+          <motion.div
+            initial={{ opacity: 0, x: 20 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            className="flex gap-3"
+          >
+            <motion.button
+              whileHover={{
+                scale: 1.05,
+                boxShadow: "0 10px 25px rgba(0, 0, 0, 0.15)",
+              }}
+              whileTap={{ scale: 0.95 }}
+              className="bg-pink-500 text-white font-semibold px-6 py-2.5 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer border border-white/20"
+            >
+              Order Online
+            </motion.button>
+
+            <motion.button
+              whileHover={{
+                scale: 1.05,
+                boxShadow: "0 10px 25px rgba(0, 0, 0, 0.15)",
+              }}
+              whileTap={{ scale: 0.95 }}
+              className="bg-white/90 text-gray-700 font-semibold px-6 py-2.5 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer border border-gray-200 backdrop-blur-sm"
+            >
+              Contact Us
+            </motion.button>
+          </motion.div>
         </div>
 
-        <div className="flex gap-2 font-semibold mt-4 md:mt-0">
-          <motion.div
-            whileTap={{ scale: 0.9 }}
-            className="bg-[#00C5FF] shadow-black shadow-xl text-md cursor-pointer border-2 border-black px-4 py-2"
-          >
-            Order Online
-          </motion.div>
-
-          <motion.div
-            whileTap={{ scale: 0.9 }}
-            className="bg-[#00C5FF] shadow-black shadow-xl text-md cursor-pointer border-2 border-black px-4 py-2"
-          >
-            Contact Us
-          </motion.div>
-        </div>
+        {/* Mobile Navigation */}
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.6, delay: 0.3 }}
+          className="lg:hidden mt-4 pt-4 border-t border-gray-200"
+        >
+          <div className="flex flex-wrap justify-center gap-6">
+            {ourLinks.map((links) => (
+              <motion.span
+                key={links.id}
+                whileHover={{ color: "#EC4899", y: -2 }}
+                className="cursor-pointer font-quick font-medium text-gray-600 text-base tracking-wide"
+              >
+                {links.name}
+              </motion.span>
+            ))}
+          </div>
+        </motion.div>
       </div>
     </header>
   );

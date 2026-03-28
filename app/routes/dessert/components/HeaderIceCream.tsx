@@ -27,7 +27,7 @@ export default function Header() {
 
   return (
     <header className="relative w-full bg-white/90 backdrop-blur-xl border-b border-white/20 shadow-lg">
-      <div className="max-w-7xl px-6 py-6">
+      <div className="max-w-7xl px-4 py-4">
         <div className="flex flex-col md:flex-row items-center justify-between ml-4">
           {/* Logo and Brand */}
           <motion.div

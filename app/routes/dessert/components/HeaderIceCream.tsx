@@ -28,28 +28,31 @@ export default function Header() {
 
   return (
     <header className="relative w-full bg-white/90 backdrop-blur-xl border-b border-white/20 shadow-lg">
-      <div className="max-w-7xl py-2 px-2 mx-auto">
+      <div className="max-w-7xl mx-auto py-2 px-2">
         <div className="flex flex-col md:flex-row items-center justify-between ml-4">
           {/* Logo and Brand */}
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
-            className="flex flex-col items-center md:items-start my-4 md:mb-0"
+            className="flex flex-col  my-4 md:mb-0"
           >
-            <motion.h1
-              whileHover={{ scale: 1.05 }}
-              className="text-4xl md:text-5xl font-coin tracking-wider bg-black/80 bg-clip-text text-transparent cursor-pointer"
-            >
-              Brain Freeze
-            </motion.h1>
-            <p className="text-md font-quick text-gray-600 tracking-wide mt-1 md:ml-1">
+            <div className="flex gap-4">
+              <img src="./images/logo.webp" />
+              <motion.h1
+                whileHover={{ scale: 1.05 }}
+                className="text-4xl md:text-5xl font-coin tracking-wider bg-black/80 bg-clip-text text-transparent cursor-pointer"
+              >
+                Brain Freeze
+              </motion.h1>
+            </div>
+            <p className="text-md font-quick text-gray-600 tracking-wide mt-1 ml-4">
               Ice Cream Shop
             </p>
           </motion.div>
 
           {/* Desktop: Nav + Icons + Order Button */}
-          <div className="hidden lg:flex items-center gap-8">
+          <div className="hidden lg:flex items-center gap-8 ml-auto">
             {/* Nav links */}
             <motion.nav
               initial={{ opacity: 0, y: -10 }}
@@ -93,21 +96,6 @@ export default function Header() {
                 </motion.button>
               ))}
             </motion.div>
-
-            {/* Order Online button */}
-            <motion.button
-              initial={{ opacity: 0, y: -10 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.4 }}
-              whileHover={{
-                scale: 1.05,
-                boxShadow: "0 10px 25px rgba(0,0,0,0.15)",
-              }}
-              whileTap={{ scale: 0.95 }}
-              className="bg-pink-500 text-white font-semibold px-6 py-2.5 rounded-full shadow-lg cursor-pointer border border-pink-400"
-            >
-              Order Online
-            </motion.button>
           </div>
         </div>
 
@@ -139,16 +127,6 @@ export default function Header() {
                 <img src={link.image} alt={link.alt} className="w-8" />
               </motion.button>
             ))}
-            <motion.button
-              whileHover={{
-                scale: 1.05,
-                boxShadow: "0 10px 25px rgba(0,0,0,0.15)",
-              }}
-              whileTap={{ scale: 0.95 }}
-              className="bg-pink-500 text-white font-semibold px-6 py-2.5 rounded-full shadow-lg cursor-pointer border border-pink-400"
-            >
-              Order Online
-            </motion.button>
           </div>
         </motion.div>
       </div>

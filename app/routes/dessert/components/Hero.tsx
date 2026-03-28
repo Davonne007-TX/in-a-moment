@@ -9,7 +9,7 @@ export default function Hero() {
         <MyIceCream />
         <motion.div
           whileHover={{ y: -5, scale: 1.01 }}
-          className=" w-full max-w-4xl p-2 mt-60"
+          className=" w-full max-w-4xl p-2 mt-40"
         >
           <div>
             <button className="bg-linear-to-tr from-pink-100 to-pink-300 text-black cursor-pointer font-bold py-2 ml-6 rounded-full font-coin text-lg shadow-lg border-2 border-pink-400 hover:shadow-xl transition-all">

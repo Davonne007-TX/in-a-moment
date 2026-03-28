@@ -9,9 +9,9 @@ export default function Header() {
   ];
 
   return (
-    <header className="relative w-full bg-white/80 backdrop-blur-xl border-b border-white/20 shadow-lg">
-      <div className="mx-auto max-w-7xl px-4 py-6">
-        <div className="flex flex-col md:flex-row items-center justify-between">
+    <header className="relative w-full bg-white/90 backdrop-blur-xl border-b border-white/20 shadow-lg">
+      <div className="max-w-7xl px-4 py-4">
+        <div className="flex flex-col md:flex-row items-center justify-between ml-4">
           {/* Logo and Brand */}
           <motion.div
             initial={{ opacity: 0, x: -20 }}
@@ -25,7 +25,7 @@ export default function Header() {
             >
               Brain Freeze
             </motion.h1>
-            <p className="text-sm font-quick text-gray-600 tracking-wide mt-1">
+            <p className="text-md font-quick text-gray-600 tracking-wide mt-1">
               Ice Cream Shop
             </p>
           </motion.div>
@@ -51,42 +51,12 @@ export default function Header() {
               >
                 {links.name}
                 <motion.div
-                  className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-pink-400 to-purple-500 group-hover:w-full transition-all duration-300"
+                  className="absolute -bottom-1 left-0 w-0 h-0.5 bg-linear-to-r from-pink-400 to-purple-500 group-hover:w-full transition-all duration-300"
                   whileHover={{ width: "100%" }}
                 />
               </motion.li>
             ))}
           </motion.nav>
-
-          {/* Action Buttons */}
-          <motion.div
-            initial={{ opacity: 0, x: 20 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            className="flex gap-3"
-          >
-            <motion.button
-              whileHover={{
-                scale: 1.05,
-                boxShadow: "0 10px 25px rgba(0, 0, 0, 0.15)",
-              }}
-              whileTap={{ scale: 0.95 }}
-              className="bg-pink-500 text-white font-semibold px-6 py-2.5 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer border border-white/20"
-            >
-              Order Online
-            </motion.button>
-
-            <motion.button
-              whileHover={{
-                scale: 1.05,
-                boxShadow: "0 10px 25px rgba(0, 0, 0, 0.15)",
-              }}
-              whileTap={{ scale: 0.95 }}
-              className="bg-white/90 text-gray-700 font-semibold px-6 py-2.5 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer border border-gray-200 backdrop-blur-sm"
-            >
-              Contact Us
-            </motion.button>
-          </motion.div>
         </div>
 
         {/* Mobile Navigation */}

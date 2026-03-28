@@ -6,22 +6,50 @@ export default function Hero() {
     <section>
       <motion.div
         whileHover={{ y: -5, scale: 1.01 }}
-        className=" w-full max-w-4xl p-8"
+        className=" w-full max-w-4xl p-2 mt-40"
       >
-        <button className="bg-linear-to-tr from-pink-100 to-pink-300 text-black cursor-pointer font-bold px-4 py-2 rounded-full font-coin text-lg shadow-lg border-2 border-pink-400 hover:shadow-xl transition-all">
+        <button className="bg-linear-to-tr from-pink-100 to-pink-300 text-black cursor-pointer font-bold py-2 ml-6 rounded-full font-coin text-lg shadow-lg border-2 border-pink-400 hover:shadow-xl transition-all">
           🍦 HOMEMADE ICE CREAM 🍦
         </button>
       </motion.div>
 
       <Card
         className="rounded-3xl p-8 shadow-xs"
-        title="What time is it? Ice Cream Time!"
-        titleClassName="font-coin font-bold text-5xl md:text-7xl bg-gradient-to-r from-pink-500 via-pink-500 to-pink-400 bg-clip-text text-transparent mb-4"
-        description="We are open 24/7, all day everyday!"
-        descriptionClassName="text-lg md:text-xl tracking-wide  text-white font-quick leading-relaxed text-gray-700 mb-6"
+        title="Best Ice Cream in Town!"
+        titleClassName="font-coin font-bold text-5xl md:text-6xl bg-gradient-to-r from-pink-500 via-pink-500 to-pink-400 bg-clip-text text-transparent mb-4 max-w-lg"
+        description="We are open 24/7, all day everyday! Hundreds of flavors to choose from!"
+        descriptionClassName="text-lg md:text-xl tracking-wide text-white font-quick leading-relaxed text-gray-700 mb-6 max-w-lg"
         action={""}
         buttonClassName={""}
       />
+      <motion.div
+        initial={{ opacity: 0, x: 20 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.6, delay: 0.2 }}
+        className="flex gap-3 ml-8 "
+      >
+        <motion.button
+          whileHover={{
+            scale: 1.05,
+            boxShadow: "0 10px 25px rgba(0, 0, 0, 0.15)",
+          }}
+          whileTap={{ scale: 0.95 }}
+          className="bg-pink-500 text-white font-semibold px-6 py-2.5 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer border border-white/20"
+        >
+          Order Online
+        </motion.button>
+
+        <motion.button
+          whileHover={{
+            scale: 1.05,
+            boxShadow: "0 10px 25px rgba(0, 0, 0, 0.15)",
+          }}
+          whileTap={{ scale: 0.95 }}
+          className="bg-white/90 text-gray-700 font-semibold px-6 py-2.5 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer border border-gray-200 backdrop-blur-sm"
+        >
+          Contact Us
+        </motion.button>
+      </motion.div>
     </section>
   );
 }

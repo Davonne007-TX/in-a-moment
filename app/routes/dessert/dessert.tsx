@@ -23,7 +23,7 @@ export default function Dessert() {
       <HeaderIceCream />
       <SecondHeader />
 
-      <section className="relative z-10 px-4 py-10 md:py-16 lg:py-10 bg-[url('./images/cone.webp')] bg-cover bg-no-repeat min-h-screen">
+      <section className="relative z-10  lg:py-10 bg-[url('./images/cone.webp')] bg-cover bg-no-repeat min-h-screen">
         <div className="flex w-full max-w-5xl flex-col gap-10 md:gap-14">
           <div>
             <motion.div

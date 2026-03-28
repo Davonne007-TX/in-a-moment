@@ -6,6 +6,7 @@ export default function Header() {
     { name: "Menu", id: 1 },
     { name: "Deals", id: 2 },
     { name: "Locations", id: 4 },
+    { name: "Contact Us", id: 5 },
   ];
   const moreLinks = [
     {
@@ -27,14 +28,14 @@ export default function Header() {
 
   return (
     <header className="relative w-full bg-white/90 backdrop-blur-xl border-b border-white/20 shadow-lg">
-      <div className="max-w-7xl px-4 py-4">
+      <div className="max-w-7xl py-2 px-2 mx-auto">
         <div className="flex flex-col md:flex-row items-center justify-between ml-4">
           {/* Logo and Brand */}
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
-            className="flex flex-col items-center md:items-start mb-4 md:mb-0"
+            className="flex flex-col items-center md:items-start my-4 md:mb-0"
           >
             <motion.h1
               whileHover={{ scale: 1.05 }}
@@ -47,8 +48,9 @@ export default function Header() {
             </p>
           </motion.div>
 
-          {/* Navigation Links + More Links (desktop) */}
+          {/* Desktop: Nav + Icons + Order Button */}
           <div className="hidden lg:flex items-center gap-8">
+            {/* Nav links */}
             <motion.nav
               initial={{ opacity: 0, y: -10 }}
               animate={{ opacity: 1, y: 0 }}
@@ -73,6 +75,7 @@ export default function Header() {
               ))}
             </motion.nav>
 
+            {/* Icon buttons */}
             <motion.div
               initial={{ opacity: 0, y: -10 }}
               animate={{ opacity: 1, y: 0 }}
@@ -90,6 +93,21 @@ export default function Header() {
                 </motion.button>
               ))}
             </motion.div>
+
+            {/* Order Online button */}
+            <motion.button
+              initial={{ opacity: 0, y: -10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.4 }}
+              whileHover={{
+                scale: 1.05,
+                boxShadow: "0 10px 25px rgba(0,0,0,0.15)",
+              }}
+              whileTap={{ scale: 0.95 }}
+              className="bg-pink-500 text-white font-semibold px-6 py-2.5 rounded-full shadow-lg cursor-pointer border border-pink-400"
+            >
+              Order Online
+            </motion.button>
           </div>
         </div>
 
@@ -121,6 +139,16 @@ export default function Header() {
                 <img src={link.image} alt={link.alt} className="w-8" />
               </motion.button>
             ))}
+            <motion.button
+              whileHover={{
+                scale: 1.05,
+                boxShadow: "0 10px 25px rgba(0,0,0,0.15)",
+              }}
+              whileTap={{ scale: 0.95 }}
+              className="bg-pink-500 text-white font-semibold px-6 py-2.5 rounded-full shadow-lg cursor-pointer border border-pink-400"
+            >
+              Order Online
+            </motion.button>
           </div>
         </motion.div>
       </div>

@@ -23,18 +23,16 @@ export default function Dessert() {
       <HeaderIceCream />
       <SecondHeader />
 
-      <section className="relative z-10  lg:py-10 bg-[url('./images/cone.webp')] bg-cover bg-no-repeat min-h-screen">
-        <div className="flex w-full max-w-5xl flex-col gap-10 md:gap-14">
-          <div>
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.1 }}
-              className="relative w-full"
-            >
-              <Hero />
-            </motion.div>
-          </div>
+      <section className="relative z-10">
+        <div className=" w-full bg-[url('./images/cone.webp')] bg-cover bg-no-repeat min-h-screen">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.1 }}
+            className="relative w-full"
+          >
+            <Hero />
+          </motion.div>
         </div>
       </section>
     </main>

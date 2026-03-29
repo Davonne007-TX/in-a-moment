@@ -1,7 +1,7 @@
 export function Welcome() {
   return (
-    <section>
-      <h1>hi home page</h1>
+    <section className="bg-[#0E0C0A] bg-cover min-h-screen">
+      <h1 className="text-white text-4xl">2026 PROJECTS</h1>
     </section>
   );
 }

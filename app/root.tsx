@@ -33,6 +33,10 @@ export const links: Route.LinksFunction = () => [
     rel: "stylesheet",
     href: "https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap",
   },
+  {
+    rel: "stylesheet",
+    href: "https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap",
+  },
 ];
 
 export function Layout({ children }: { children: React.ReactNode }) {

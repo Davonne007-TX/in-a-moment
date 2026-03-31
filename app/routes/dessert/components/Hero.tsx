@@ -33,7 +33,7 @@ export default function Hero() {
           initial={{ opacity: 0, x: 20 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="flex gap-3 ml-8 -mt-8"
+          className="flex gap-3 ml-8 -mt-8 my-10"
         >
           <motion.button
             whileHover={{

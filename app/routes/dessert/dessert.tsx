@@ -3,6 +3,7 @@ import HeaderIceCream from "./components/HeaderIceCream";
 import Card from "./components/Card";
 import SecondHeader from "./components/SecondHeader";
 import Hero from "./components/Hero";
+import Menu from "./components/Menu";
 
 export default function Dessert() {
   const cardDescription = `It's always a good time for ice cream! We have the best flavors in town! From Oreo Blast, Neapolitan, Peanut Butter Cup, and many more! Come on down and get your brain freeze on!`;
@@ -34,7 +35,10 @@ export default function Dessert() {
             <Hero />
           </motion.div>
         </div>
+        <div className="p-2 bg-pink-500 h-10"></div>
       </section>
+
+      <Menu />
     </main>
   );
 }

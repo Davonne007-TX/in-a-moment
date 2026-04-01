@@ -14,7 +14,14 @@ export default function Menu() {
 
       <ul className="flex gap-20 mt-10">
         {ourMenu.map((item) => (
-          <img src={item.itemImage} className="w-50" />
+          <li key={item.id}>
+            <img
+              src={item.itemImage}
+              alt={item.alt}
+              loading="lazy"
+              className="w-48"
+            />
+          </li>
         ))}
       </ul>
     </section>

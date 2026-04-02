@@ -20,23 +20,24 @@ export default function Menu() {
       alt: "Vanilla and Chocolate mix in a cup, image by Haberdoedas Photography on Pexels",
       id: 3,
     },
-    {
-      name: "Sides",
-      itemImage: "./images/fries.webp",
-      alt: "French Fries, image bytohamina on Pexels",
-      id: 4,
-    },
-    {
-      name: "Combo Meals",
-      itemImage: "./images/chicken.webp",
-      alt: "Chicken Sandwich and Fries, image by pexles-salman-khan on Pexels",
-      id: 5,
-    },
 
     {
       name: "Salads",
       itemImage: "./images/ceaser.webp",
       alt: "Cesar Salad, image by muhammad.abdullah on Pexels",
+      id: 4,
+    },
+
+    {
+      name: "Sides",
+      itemImage: "./images/fries.webp",
+      alt: "French Fries, image bytohamina on Pexels",
+      id: 5,
+    },
+    {
+      name: "Combo Meals",
+      itemImage: "./images/chicken.webp",
+      alt: "Chicken Sandwich and Fries, image by pexles-salman-khan on Pexels",
       id: 6,
     },
   ];

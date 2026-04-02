@@ -1,34 +1,40 @@
 export default function Menu() {
   const ourMenu = [
     {
+      name: "Breakfast",
       itemImage: "./images/breakfast.webp",
       alt: "Breakfast Platter, image by pexels-hebersantos on Pexels",
       id: 1,
     },
     {
+      name: "Hamburgers",
       itemImage: "./images/hamburger.webp",
       alt: "Hamburger deluxe, image by muhammad.abdullah on freePik",
       id: 2,
     },
     {
+      name: "Ice Cream",
       itemImage: "./images/iceCreamMix.webp",
       alt: "Vanilla and Chocolate mix in a cup, image by Haberdoedas Photography on Pexels",
       id: 3,
     },
     {
+      name: "Sides",
       itemImage: "./images/fries.webp",
       alt: "French Fries, image bytohamina on Pexels",
       id: 4,
     },
     {
+      name: "Combo Meals",
       itemImage: "./images/chicken.webp",
       alt: "Chicken Sandwich and Fries, image by pexles-salman-khan on Pexels",
       id: 5,
     },
 
     {
+      name: "Salad",
       itemImage: "./images/ceaser.webp",
-      alt: "Ceaser Salad, image by muhammad.abdullah on Pexels",
+      alt: "Cesar Salad, image by muhammad.abdullah on Pexels",
       id: 6,
     },
   ];
@@ -40,7 +46,7 @@ export default function Menu() {
       </h2>
       <p className="font-coin text-3xl">Our Menu</p>
 
-      <ul className="grid grid-cols-2 md:grid-cols-3 gap-20 mt-10">
+      <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-20 md:gap-30 mt-10">
         {ourMenu.map((item) => (
           <li key={item.id}>
             <img
@@ -49,6 +55,9 @@ export default function Menu() {
               loading="lazy"
               className="w-48 h-48 rounded-full object-cover"
             />
+            <p className="text-center p-2 font-serif text-2xl tracking-wider">
+              {item.name}
+            </p>
           </li>
         ))}
       </ul>

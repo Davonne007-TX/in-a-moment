@@ -1,3 +1,5 @@
+import { motion } from "motion/react";
+
 export default function Menu() {
   const ourMenu = [
     {
@@ -32,7 +34,7 @@ export default function Menu() {
     },
 
     {
-      name: "Salad",
+      name: "Salads",
       itemImage: "./images/ceaser.webp",
       alt: "Cesar Salad, image by muhammad.abdullah on Pexels",
       id: 6,
@@ -48,17 +50,23 @@ export default function Menu() {
 
       <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-20 md:gap-30 mt-10">
         {ourMenu.map((item) => (
-          <li key={item.id}>
+          <motion.li
+            key={item.id}
+            whileHover={{
+              scale: 1.1,
+              transition: { duration: 0.1 },
+            }}
+          >
             <img
               src={item.itemImage}
               alt={item.alt}
               loading="lazy"
-              className="w-48 h-48 rounded-full object-cover"
+              className="w-48 h-48 rounded-full object-cover cursor-pointer"
             />
-            <p className="text-center p-2 font-serif text-2xl tracking-wider">
+            <p className="text-center p-2 font-serif text-2xl tracking-wide">
               {item.name}
             </p>
-          </li>
+          </motion.li>
         ))}
       </ul>
     </section>

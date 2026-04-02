@@ -1,8 +1,36 @@
 export default function Menu() {
   const ourMenu = [
-    { itemImage: "./images/hamburger.webp", alt: "", id: 0 },
-    { itemImage: "./images/fries.webp", alt: "", id: 1 },
-    { itemImage: "./images/ceaser.webp", alt: "", id: 2 },
+    {
+      itemImage: "./images/breakfast.webp",
+      alt: "Breakfast Platter, image by pexels-hebersantos on Pexels",
+      id: 1,
+    },
+    {
+      itemImage: "./images/hamburger.webp",
+      alt: "Hamburger deluxe, image by muhammad.abdullah on freePik",
+      id: 2,
+    },
+    {
+      itemImage: "./images/iceCreamMix.webp",
+      alt: "Vanilla and Chocolate mix in a cup, image by Haberdoedas Photography on Pexels",
+      id: 3,
+    },
+    {
+      itemImage: "./images/fries.webp",
+      alt: "French Fries, image bytohamina on Pexels",
+      id: 4,
+    },
+    {
+      itemImage: "./images/chicken.webp",
+      alt: "Chicken Sandwich and Fries, image by pexles-salman-khan on Pexels",
+      id: 5,
+    },
+
+    {
+      itemImage: "./images/ceaser.webp",
+      alt: "Ceaser Salad, image by muhammad.abdullah on Pexels",
+      id: 6,
+    },
   ];
 
   return (
@@ -12,14 +40,14 @@ export default function Menu() {
       </h2>
       <p className="font-coin text-3xl">Our Menu</p>
 
-      <ul className="flex gap-20 mt-10">
+      <ul className="grid grid-cols-2 md:grid-cols-3 gap-20 mt-10">
         {ourMenu.map((item) => (
           <li key={item.id}>
             <img
               src={item.itemImage}
               alt={item.alt}
               loading="lazy"
-              className="w-48"
+              className="w-48 h-48 rounded-full object-cover"
             />
           </li>
         ))}

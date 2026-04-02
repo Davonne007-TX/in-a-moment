@@ -9,3 +9,7 @@
   --font-quick: "Quicksand", sans-serif;
   --font-ber: "Berkshire Swash", serif;
 }
+
+body {
+  background-color: #feffec;
+}

@@ -33,15 +33,15 @@ export default function Unique() {
         <div className="max-w-xl mx-auto my-20">
           <h3 className="text-white font-ber text-5xl mb-4">
             The Brain Freeze{" "}
-            <span className="text-[#56F048] p-2">Difference</span>
+            <span className="text-[#56F048] p-2 mt-2">Difference</span>
           </h3>
-          <p className="text-white/90 text-2xl font-sans leading-10 ">
+          <p className="text-white/90 text-2xl font-sans leading-10 mt-10 ">
             Our family, through each generation, has had the pleasure of serving
             our customers the finest. We strive for quality ingredients, lots of
             flavors, a meal and of course a brain freeze.
           </p>
 
-          <div className="my-20 flex flex-col lg:flex-row justify-center items-center gap-10">
+          <div className="my-10 flex flex-col lg:flex-row justify-center items-center gap-10">
             {myCards.map((cards) => (
               <motion.div
                 key={cards.id}

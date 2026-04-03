@@ -47,7 +47,7 @@ export default function Menu() {
       <h2 className=" text-lg md:text-3xl font-quic text-center">
         ITS SO GOOD YOU GET A BRAIN FREEZE AND SOME FOOD!
       </h2>
-      <p className="font-coin text-3xl">Our Menu</p>
+      <p className="font-coin text-3xl text-pink-500">Our Menu</p>
 
       <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-20 md:gap-30 mt-10">
         {ourMenu.map((item) => (

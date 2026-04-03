@@ -1,9 +1,9 @@
 import { motion } from "motion/react";
 import HeaderIceCream from "./components/HeaderIceCream";
-import Card from "./components/Card";
 import SecondHeader from "./components/SecondHeader";
 import Hero from "./components/Hero";
 import Menu from "./components/Menu";
+import Unique from "./components/Unique";
 
 export default function Dessert() {
   const cardDescription = `It's always a good time for ice cream! We have the best flavors in town! From Oreo Blast, Neapolitan, Peanut Butter Cup, and many more! Come on down and get your brain freeze on!`;
@@ -39,6 +39,7 @@ export default function Dessert() {
       </section>
 
       <Menu />
+      <Unique />
     </main>
   );
 }

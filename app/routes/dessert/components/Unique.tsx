@@ -60,6 +60,13 @@ export default function Unique() {
               </motion.div>
             ))}
           </div>
+          <button
+            className="bg-[#56F048] text-black font-semibold mt-8 px-8 py-3 rounded-full shadow-lg 
+             transition-all duration-300 cursor-pointer
+             hover:text-white hover:scale-105"
+          >
+            Learn More
+          </button>
         </div>
       </div>
     </section>

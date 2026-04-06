@@ -11,28 +11,19 @@ export default function Locations() {
           transition={{ duration: 0.6 }}
           className="flex flex-col justify-center items-center mt-20"
         >
-          <p className="text-white p-4 text-6xl font-chewy text-center max-w-2xl font-bold">
-            We have almost every flavor there is! Find your location today!
+          <p className="text-white p-4 text-4xl md:text-6xl font-coin text-center max-w-xl font-bold">
+            We have almost every flavor there is
           </p>
 
+          <p className="font-bold text-3xl font-serif text-white  text-center shadow-2xs p-2">
+            Choose your favorite
+          </p>
           <div className="flex flex-col gap-4 justify-center items-center font-bold bg-[#f8f8ff] p-6 rounded-xl max-w-sm font-serif mt-4">
-            <p className="tracking-widest text-sm text-gray-700">
+            <p className="tracking-widest text-sm text-gray-700 ">
               FIND A STORE
             </p>
 
-            <div className="flex items-center bg-white border-[1.5px] border-gray-200 rounded-full pl-4 pr-1.5 py-1.5 w-82 gap-2 focus-within:border-gray-400 transition-colors">
-              <svg
-                className="w-4 h-4 text-gray-300 shrink-0"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              >
-                <circle cx="11" cy="11" r="8" />
-                <line x1="21" y1="21" x2="16.65" y2="16.65" />
-              </svg>
+            <div className="flex items-center bg-white border-[1.5px] border-gray-200 rounded-full pl-4 pr-1.5 py-1.5 w-76 md:w-82 gap-2 focus-within:border-gray-400 transition-colors">
               <input
                 type="text"
                 placeholder="City, State, or Zip"

@@ -31,7 +31,7 @@ export default function Unique() {
 
       <div className=" relative p-4 flex-col items-center text-center px-4 w-full">
         <div className="max-w-xl mx-auto my-20">
-          <h3 className="text-white font-ber text-5xl mb-4">
+          <h3 className="font-coin text-white font- text-5xl mb-4">
             The Brain Freeze{" "}
             <span className="text-[#56F048] p-2 mt-2">Difference</span>
           </h3>

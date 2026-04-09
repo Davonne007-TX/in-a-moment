@@ -23,7 +23,9 @@ export default function Dessert() {
             <Hero />
           </motion.div>
         </div>
-        <div className="p-2 bg-pink-500 h-10"></div>
+        <div className="p-2 bg-pink-500 h-10 text-center text-white tracking-widest text-xl">
+          FREE 2 SCOOPS WITH EVERY ORDER, ANY FLAVOR
+        </div>
       </section>
 
       <Menu />

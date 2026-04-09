@@ -20,7 +20,7 @@ export default function Hero() {
               className="rounded-3xl p-8 shadow-xs"
               title="Best Ice Cream in Town!"
               titleClassName="font-coin font-bold text-5xl md:text-6xl bg-gradient-to-r from-pink-500 via-pink-500 to-pink-400 bg-clip-text text-transparent mb-4 max-w-lg"
-              description="We are open 24/7, all day everyday! Hundreds of flavors to choose from!"
+              description="We are open 24/7, all day everyday, order online or come in today! Ice cream for everyone! We can't wait to see you!"
               descriptionClassName="text-lg md:text-xl tracking-wide text-white font-quick leading-relaxed text-gray-700 mb-6 max-w-lg"
               action={""}
               buttonClassName={""}

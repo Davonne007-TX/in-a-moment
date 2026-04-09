@@ -15,7 +15,7 @@ export default function Locations() {
             We have almost every flavor there is
           </p>
 
-          <p className="font-bold text-3xl font-serif text-white  text-center shadow-2xs p-2">
+          <p className="font-bold text-3xl font-serif text-white  text-center shadow-xs p-2">
             Choose your favorite
           </p>
           <div className="flex flex-col gap-4 justify-center items-center font-bold bg-[#f8f8ff] p-6 rounded-xl max-w-sm font-serif mt-4">

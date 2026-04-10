@@ -1,6 +1,6 @@
 export default function TheWorks() {
   return (
-    <section className="flex flex-col md:flex-row w-full h-screen">
+    <section className="flex flex-col md:flex-row w-full">
       <div className="relative w-full md:w-1/2 h-1/2 cursor-pointer">
         <img
           src="./images/theWorks.webp"

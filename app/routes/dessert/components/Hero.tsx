@@ -6,22 +6,22 @@ export default function Hero() {
   return (
     <section>
       <div className="flex flex-col justify-between">
-        <MyIceCream />
+        {/* <MyIceCream /> */}
         <motion.div
           whileHover={{ y: -5, scale: 1.01 }}
           className=" w-full max-w-4xl p-2"
         >
-          <div>
-            <button className="bg-linear-to-tr from-pink-100 to-pink-300 text-black cursor-pointer font-bold py-2 ml-6 rounded-full font-coin text-lg shadow-lg border-2 border-pink-400 hover:shadow-xl transition-all">
-              🍦 HOMEMADE ICE CREAM 🍦
+          <div className="mt-60">
+            <button className="bg-linear-to-tr from-red-300 to-red-600 text-white cursor-pointer font-bold py-2 ml-6 rounded-full font-coin text-lg shadow-lg border-2 border-red-400 hover:shadow-xl transition-all">
+              🍔 FRESH TO ORDER 🍦
             </button>
 
             <Card
               className="rounded-3xl p-8 shadow-xs"
-              title="Best Ice Cream in Town!"
-              titleClassName="font-coin font-bold text-5xl md:text-6xl bg-gradient-to-r from-pink-500 via-pink-500 to-pink-400 bg-clip-text text-transparent mb-4 max-w-lg"
-              description="We are open 24/7, all day everyday, order online or come in today! Ice cream for everyone! We can't wait to see you!"
-              descriptionClassName="text-lg md:text-xl tracking-wide text-white font-quick leading-relaxed text-gray-700 mb-6 max-w-lg"
+              title="Best Burgers & Ice Cream in Town!"
+              titleClassName="font-coin font-bold text-5xl md:text-6xl bg-black bg-clip-text text-transparent mb-4 max-w-lg"
+              description="We are open 24/7, all day everyday, order online or come in today! Burgers and ice cream for everyone! We can't wait to see you!"
+              descriptionClassName="text-lg md:text-xl tracking-wide font-quick leading-relaxed mb-6 max-w-lg"
               action={""}
               buttonClassName={""}
             />
@@ -41,7 +41,7 @@ export default function Hero() {
               boxShadow: "0 10px 25px rgba(0, 0, 0, 0.15)",
             }}
             whileTap={{ scale: 0.95 }}
-            className="bg-pink-500 text-white font-semibold px-6 py-2.5 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer border border-white/20"
+            className="bg-red-400 text-white font-semibold px-6 py-2.5 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer border border-white/20"
           >
             View Flavors
           </motion.button>

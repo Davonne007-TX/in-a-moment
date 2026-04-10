@@ -6,6 +6,7 @@ import Menu from "./components/Menu";
 import Unique from "./components/Unique";
 import Locations from "./components/Locations";
 import TheWorks from "./components/TheWorks";
+import Footer from "./components/Footer";
 
 export default function Dessert() {
   return (
@@ -14,7 +15,7 @@ export default function Dessert() {
       <SecondHeader />
 
       <section className="relative z-10">
-        <div className=" w-full bg-[url('./images/cone.webp')] bg-cover bg-no-repeat min-h-screen">
+        <div className=" w-full bg-[url('./images/open.webp')] bg-cover bg-no-repeat min-h-screen">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -24,7 +25,7 @@ export default function Dessert() {
             <Hero />
           </motion.div>
         </div>
-        <div className="p-2 bg-pink-500 h-146md:h-10 text-center text-white tracking-widest md:text-xl">
+        <div className="p-2 bg-red-500 h-146md:h-10 text-center text-white tracking-widest md:text-xl">
           FREE 2 SCOOPS WITH EVERY ORDER, ANY FLAVOR
         </div>
       </section>
@@ -33,6 +34,7 @@ export default function Dessert() {
       <Unique />
       <Locations />
       <TheWorks />
+      <Footer />
     </main>
   );
 }

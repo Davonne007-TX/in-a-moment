@@ -5,6 +5,7 @@ import Hero from "./components/Hero";
 import Menu from "./components/Menu";
 import Unique from "./components/Unique";
 import Locations from "./components/Locations";
+import TheWorks from "./components/TheWorks";
 
 export default function Dessert() {
   return (
@@ -23,7 +24,7 @@ export default function Dessert() {
             <Hero />
           </motion.div>
         </div>
-        <div className="p-2 bg-pink-500 h-10 text-center text-white tracking-widest text-xl">
+        <div className="p-2 bg-pink-500 h-146md:h-10 text-center text-white tracking-widest md:text-xl">
           FREE 2 SCOOPS WITH EVERY ORDER, ANY FLAVOR
         </div>
       </section>
@@ -31,6 +32,7 @@ export default function Dessert() {
       <Menu />
       <Unique />
       <Locations />
+      <TheWorks />
     </main>
   );
 }

@@ -16,8 +16,8 @@ export default function Header() {
   ];
 
   return (
-    <header className="w-full bg-red-500 backdrop-blur-xl border-b border-white/20 shadow-lg">
-      <div className="p-4 text-white">
+    <header className="w-full bg-[#cf1020]/90 backdrop-blur-xl border-b border-white/20 shadow-lg">
+      <div className="md:p-4 text-white">
         <div className="flex justify-between py-4 px-4">
           {/* Logo */}
           <motion.div
@@ -33,7 +33,7 @@ export default function Header() {
             />
             <motion.h1
               whileHover={{ scale: 1.05 }}
-              className="text-4xl font-coin tracking-wide cursor-pointer"
+              className="text-4xl font-coin text-center tracking-wide cursor-pointer"
             >
               Brain Freeze Burgers
             </motion.h1>
@@ -70,13 +70,9 @@ export default function Header() {
                   key={link.id}
                   whileHover={{ scale: 1.1, y: -1 }}
                   whileTap={{ scale: 0.95 }}
-                  className="p-2 rounded-full hover:bg-gray-100 transition"
+                  className="p-2 rounded-full hover:bg-gray-100 transition cursor-pointer"
                 >
-                  <img
-                    src={link.image}
-                    alt={link.alt}
-                    className="w-5 h-5 text-white"
-                  />
+                  <img src={link.image} alt={link.alt} />
                 </motion.button>
               ))}
             </motion.div>
@@ -103,7 +99,11 @@ export default function Header() {
           <div className="flex justify-center gap-4 mt-4">
             {moreLinks.map((link) => (
               <button key={link.id}>
-                <img src={link.image} alt={link.alt} className="w-6" />
+                <img
+                  src={link.image}
+                  alt={link.alt}
+                  className="p-2 rounded-full hover:bg-gray-100 transition cursor-pointer"
+                />
               </button>
             ))}
           </div>

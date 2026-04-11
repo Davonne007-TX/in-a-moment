@@ -11,11 +11,10 @@ import Footer from "./components/Footer";
 export default function Dessert() {
   return (
     <main className="relative">
-      <HeaderIceCream />
-      <SecondHeader />
-
       <section className="relative z-10">
         <div className=" w-full bg-[url('./images/open.webp')] bg-cover bg-no-repeat min-h-screen">
+          <HeaderIceCream />
+          <SecondHeader />
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -25,7 +24,7 @@ export default function Dessert() {
             <Hero />
           </motion.div>
         </div>
-        <div className="p-2 bg-red-500 h-146md:h-10 text-center text-white tracking-widest md:text-xl">
+        <div className="p-2 bg-red-500  md:h-10 text-center text-white tracking-widest md:text-xl">
           FREE 2 SCOOPS WITH EVERY ORDER, ANY FLAVOR
         </div>
       </section>

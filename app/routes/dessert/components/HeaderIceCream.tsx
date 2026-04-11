@@ -10,85 +10,73 @@ export default function Header() {
   ];
 
   const moreLinks = [
-    {
-      image: "./images/search.webp",
-      alt: "Search icon, icon by icons8",
-      id: 0,
-    },
-    {
-      image: "./images/account.webp",
-      alt: "Account icon, icon by icons8",
-      id: 1,
-    },
-    {
-      image: "./images/cart.webp",
-      alt: "Shopping Cart icon, icon by icons8",
-      id: 2,
-    },
+    { image: "./images/search.webp", alt: "Search", id: 0 },
+    { image: "./images/account.webp", alt: "Account", id: 1 },
+    { image: "./images/cart.webp", alt: "Cart", id: 2 },
   ];
 
   return (
-    <header className="relative w-full bg-white/90 backdrop-blur-xl border-b border-white/20 shadow-lg p-2">
-      <div className="max-w-7xl mx-auto py-2 px-4">
-        <div className="flex items-center justify-between">
+    <header className="w-full bg-red-500 backdrop-blur-xl border-b border-white/20 shadow-lg">
+      <div className="p-4 text-white">
+        <div className="flex justify-between py-4 px-4">
           {/* Logo */}
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
-            className="flex items-center gap-4"
+            className="flex gap-3"
           >
             <img
               src="./images/icon.png"
-              className="w-12 h-12"
-              alt="Burger Icon, image from icon8"
+              className="w-10 h-10"
+              alt="Burger Icon"
             />
             <motion.h1
               whileHover={{ scale: 1.05 }}
-              className="text-4xl font-coin tracking-wider bg-black/80 bg-clip-text text-transparent cursor-pointer"
+              className="text-4xl font-coin tracking-wide cursor-pointer"
             >
               Brain Freeze Burgers
             </motion.h1>
           </motion.div>
 
-          <div className="hidden lg:flex items-center gap-8">
+          {/* RIGHT SIDE */}
+          <div className="hidden lg:flex gap-10 ml-auto">
             {/* Nav */}
-            <motion.nav
-              initial={{ opacity: 0, y: -10 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6 }}
-              className="flex items-center gap-8"
-            >
-              {ourLinks.map((links, index) => (
+            <motion.nav className="flex items-center gap-8 text-white">
+              {ourLinks.map((link, index) => (
                 <motion.li
-                  key={links.id}
+                  key={link.id}
                   initial={{ opacity: 0, y: -10 }}
                   animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.4, delay: 0.1 * index }}
-                  whileHover={{ y: -3, color: "" }}
-                  className="list-none cursor-pointer font-quick font-medium text-gray-700 text-lg tracking-wide relative group"
+                  transition={{ delay: index * 0.08 }}
+                  whileHover={{ y: -2 }}
+                  className="list-none cursor-pointer  font-medium relative group text-xl"
                 >
-                  {links.name}
-                  <motion.div className="absolute -bottom-1 left-0 w-0 h-0.5 bg-linear-to-r from-red-400 to-red-200 group-hover:w-full transition-all duration-300" />
+                  {link.name}
+                  <span className="absolute left-0 -bottom-1 w-0  bg-red-400 transition-all duration-300 group-hover:w-full" />
                 </motion.li>
               ))}
             </motion.nav>
 
             {/* Icons */}
             <motion.div
-              initial={{ opacity: 0, y: -10 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.3 }}
-              className="flex items-center gap-4"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.3 }}
+              className="flex items-center gap-4 text-pink-300"
             >
               {moreLinks.map((link) => (
                 <motion.button
                   key={link.id}
-                  whileHover={{ scale: 1.15, y: -2 }}
+                  whileHover={{ scale: 1.1, y: -1 }}
                   whileTap={{ scale: 0.95 }}
-                  className="cursor-pointer"
+                  className="p-2 rounded-full hover:bg-gray-100 transition"
                 >
-                  <img src={link.image} alt={link.alt} className="w-6 h-6" />
+                  <img
+                    src={link.image}
+                    alt={link.alt}
+                    className="w-5 h-5 text-white"
+                  />
                 </motion.button>
               ))}
             </motion.div>
@@ -97,32 +85,26 @@ export default function Header() {
 
         {/* MOBILE */}
         <motion.div
+          className="lg:hidden mt-4 border-t pt-4"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ duration: 0.6 }}
-          className="lg:hidden mt-4 pt-4 border-t border-gray-200"
         >
-          <div className="flex justify-center gap-6 mt-4">
-            {ourLinks.map((links) => (
-              <motion.span
-                key={links.id}
-                whileHover={{ color: "#EC4899", y: -2 }}
-                className="cursor-pointer font-quick font-medium text-gray-600 text-base tracking-wide"
+          <div className="flex flex-wrap justify-center gap-4">
+            {ourLinks.map((link) => (
+              <span
+                key={link.id}
+                className="text-sm font-medium cursor-pointer"
               >
-                {links.name}
-              </motion.span>
+                {link.name}
+              </span>
             ))}
           </div>
 
           <div className="flex justify-center gap-4 mt-4">
             {moreLinks.map((link) => (
-              <motion.button
-                key={link.id}
-                whileHover={{ scale: 1.15 }}
-                className="cursor-pointer"
-              >
-                <img src={link.image} alt={link.alt} className="w-8" />
-              </motion.button>
+              <button key={link.id}>
+                <img src={link.image} alt={link.alt} className="w-6" />
+              </button>
             ))}
           </div>
         </motion.div>

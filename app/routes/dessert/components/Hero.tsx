@@ -1,6 +1,6 @@
 import { motion } from "motion/react";
 import Card from "./Card";
-import MyIceCream from "./MyIceCream";
+// import MyIceCream from "./MyIceCream";
 
 export default function Hero() {
   return (
@@ -11,7 +11,7 @@ export default function Hero() {
           whileHover={{ y: -5, scale: 1.01 }}
           className=" w-full max-w-4xl p-2"
         >
-          <div className="mt-60">
+          <div className="mt-40">
             <button className="bg-linear-to-tr from-red-300 to-red-600 text-white cursor-pointer font-bold py-2 ml-6 rounded-full font-coin text-lg shadow-lg border-2 border-red-400 hover:shadow-xl transition-all">
               🍔 FRESH TO ORDER 🍦
             </button>

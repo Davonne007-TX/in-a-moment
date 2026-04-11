@@ -24,7 +24,7 @@ export default function Header() {
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
-            className="flex gap-3"
+            className="flex gap-3 items-center"
           >
             <img
               src="./images/icon.png"
@@ -33,7 +33,7 @@ export default function Header() {
             />
             <motion.h1
               whileHover={{ scale: 1.05 }}
-              className="text-4xl font-coin text-center tracking-wide cursor-pointer"
+              className="text-4xl font-coin text-center tracking-wide cursor-pointer mt-1"
             >
               Brain Freeze Burgers
             </motion.h1>

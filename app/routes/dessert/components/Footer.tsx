@@ -14,7 +14,6 @@ export default function Footer() {
         "Drinks",
         "Shakes",
         "Ice Cream",
-        "Deals",
         "Nutrition",
       ],
     },
@@ -41,8 +40,6 @@ export default function Footer() {
         "Strawberry",
         "Cookies 'n Cream",
         "Cookie Dough",
-        "Pistachio",
-        "Matcha",
         "Rocky Road",
         "Cheesecake",
         "German Chocolate",
@@ -71,8 +68,22 @@ export default function Footer() {
     },
   ];
   return (
-    <div>
-      <p>Footer</p>
-    </div>
+    <section className="flex flex-col md:flex-row gap-20 p-20">
+      {footerLinks.map((section, index) => (
+        <div key={index} className="flex flex-col gap-4">
+          <h3 className="font-bold font-coin text-lg text-red-500">
+            {section.title}
+          </h3>
+
+          <ul className="space-y-1 flex flex-col gap-1 font-semibold">
+            {section.link.map((link, i) => (
+              <li key={i} className="text-sm hover:underline cursor-pointer">
+                {link}
+              </li>
+            ))}
+          </ul>
+        </div>
+      ))}
+    </section>
   );
 }

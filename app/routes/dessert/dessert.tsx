@@ -6,6 +6,7 @@ import Unique from "./components/Unique";
 import Locations from "./components/Locations";
 import TheWorks from "./components/TheWorks";
 import Footer from "./components/Footer";
+import Socials from "./components/Socials";
 
 export default function Dessert() {
   return (
@@ -33,6 +34,7 @@ export default function Dessert() {
       <Locations />
       <TheWorks />
       <Footer />
+      <Socials />
     </main>
   );
 }

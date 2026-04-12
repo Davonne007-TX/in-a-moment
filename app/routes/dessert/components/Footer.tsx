@@ -1,3 +1,5 @@
+import Socials from "./Socials";
+
 export default function Footer() {
   const footerLinks = [
     {
@@ -74,7 +76,7 @@ export default function Footer() {
           </ul>
         </div>
       ))}
-      <div className="flex gap-2  md:ml-auto">
+      <div className="flex gap-2 md:ml-auto">
         <img
           src="./images/icon.png"
           className="w-22 h-22 ml-auto"

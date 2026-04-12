@@ -4,11 +4,8 @@ export default function Footer() {
       title: "Menu",
       link: [
         "Breakfast",
-        "Pancakes",
-        "Waffles",
         "Lunch",
-        "Hamburgers",
-        "Chicken",
+        "Dinner",
         "Combo Meals",
         "Salads",
         "Drinks",
@@ -20,13 +17,11 @@ export default function Footer() {
     {
       title: "Catering",
       link: [
-        "Parties",
-        "Weddings",
         "Birthday Parties",
         "Business Retreats",
         "Family Reunions",
         "Baby Showers",
-        "Bridal Showers",
+        "Weddings",
         "Anniversaries",
         "Graduation Parties",
         "School Events",
@@ -39,14 +34,11 @@ export default function Footer() {
         "Chocolate",
         "Strawberry",
         "Cookies 'n Cream",
-        "Cookie Dough",
         "Rocky Road",
-        "Cheesecake",
         "German Chocolate",
         "Coffee",
         "Bubble Gum",
         "Mango",
-        "Cherry",
         "And more...",
       ],
     },
@@ -60,15 +52,13 @@ export default function Footer() {
         "Careers",
         "Specials",
         "FAQs",
-        "Your account",
         "Events",
-        "Donations",
         "Get Involved",
       ],
     },
   ];
   return (
-    <section className="flex flex-col md:flex-row gap-20 p-20">
+    <section className="flex flex-col md:flex-row gap-20 p-20 max-w-7xl mx-auto">
       {footerLinks.map((section, index) => (
         <div key={index} className="flex flex-col gap-4">
           <h3 className="font-bold font-coin text-lg text-red-500">
@@ -84,6 +74,18 @@ export default function Footer() {
           </ul>
         </div>
       ))}
+      <div className="flex gap-2  md:ml-auto">
+        <img
+          src="./images/icon.png"
+          className="w-22 h-22 ml-auto"
+          alt="Burger Icon"
+        />
+        <img
+          src="./images/cone2.png"
+          className="w-22 h-22 ml-auto"
+          alt="Burger Icon"
+        />
+      </div>
     </section>
   );
 }

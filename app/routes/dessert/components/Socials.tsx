@@ -1,8 +1,4 @@
-import { useState } from "react";
-
 export default function Socials() {
-  const [mobileNavigationOpen, setMobileNavigationOpen] = useState(false);
-
   const socialLinks = [
     { socialMediaIcon: "./images/twitter.png", id: 1 },
     { socialMediaIcon: "./images/instagram.png", id: 2 },

@@ -1,6 +1,10 @@
 import { motion } from "motion/react";
+import { useState } from "react";
+import { Menu, X } from "lucide-react";
 
 export default function Header() {
+  const [mobileNavigationOpen, setMobileNavigationOpen] = useState(false);
+
   const ourLinks = [
     { name: "About Us", id: 0 },
     { name: "Menu", id: 1 },
@@ -77,38 +81,36 @@ export default function Header() {
               ))}
             </motion.div>
           </div>
+          <button
+            onClick={() => setMobileNavigationOpen(!mobileNavigationOpen)}
+            className="lg:hidden focus:outline-none cursor-pointer"
+          >
+            {mobileNavigationOpen ? <X size={24} /> : <Menu size={24} />}
+          </button>
         </div>
-
-        {/* MOBILE */}
-        <motion.div
-          className="lg:hidden mt-4 border-t pt-4"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-        >
-          <div className="flex flex-wrap justify-center gap-4">
-            {ourLinks.map((link) => (
-              <span
-                key={link.id}
-                className="text-sm font-medium cursor-pointer"
-              >
-                {link.name}
-              </span>
-            ))}
-          </div>
-
-          <div className="flex justify-center gap-4 mt-4">
-            {moreLinks.map((link) => (
-              <button key={link.id}>
-                <img
-                  src={link.image}
-                  alt={link.alt}
-                  className="p-2 rounded-full hover:bg-gray-100 transition cursor-pointer"
-                />
-              </button>
-            ))}
-          </div>
-        </motion.div>
       </div>
+
+      {/* mobile nav */}
+      {mobileNavigationOpen && (
+        <div className="bg-white shadow-lg rounded-b-2xl">
+          <ul className="flex flex-col py-6">
+            {ourLinks.map((links) => (
+              <li
+                key={links.id}
+                className="font-bold text-xl px-6 py-4 border-b border-gray-200 cursor-pointer tracking-wide hover:bg-gray-100 transition"
+              >
+                {links.name.toUpperCase()}
+              </li>
+            ))}
+
+            <div className="flex justify-center mt-6">
+              <button className="bg-red-500 hover:bg-red-600 transition px-6 py-3 rounded-full cursor-pointer text-white font-bold w-[80%] shadow-md">
+                ORDER NOW
+              </button>
+            </div>
+          </ul>
+        </div>
+      )}
     </header>
   );
 }

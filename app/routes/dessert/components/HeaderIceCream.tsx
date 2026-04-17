@@ -92,14 +92,23 @@ export default function Header() {
 
       {/* mobile nav */}
       {mobileNavigationOpen && (
-        <div className="bg-white">
-          <ul className="flex flex-col gap-4">
+        <div className="bg-white shadow-lg rounded-b-2xl">
+          <ul className="flex flex-col py-6">
             {ourLinks.map((links) => (
-              <li>{links.name}</li>
+              <li
+                key={links.id}
+                className="font-bold text-xl px-6 py-4 border-b border-gray-200 cursor-pointer tracking-wide hover:bg-gray-100 transition"
+              >
+                {links.name.toUpperCase()}
+              </li>
             ))}
-          </ul>
 
-          {}
+            <div className="flex justify-center mt-6">
+              <button className="bg-red-500 hover:bg-red-600 transition px-6 py-3 rounded-full cursor-pointer text-white font-bold w-[80%] shadow-md">
+                ORDER NOW
+              </button>
+            </div>
+          </ul>
         </div>
       )}
     </header>

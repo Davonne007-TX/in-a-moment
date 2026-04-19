@@ -12,7 +12,7 @@ export function Welcome() {
             src="/images/me.webp"
             className="max-w-xs md:max-w-md rounded-3xl p-4"
           />
-          <h1 className="text-white text-3xl p-2 md:text-9xl mt-20 font-quick md:ml-auto max-w-md">
+          <h1 className="text-white text-3xl p-2 md:text-8xl lg:text-9xl mt-20 font-quick md:ml-auto max-w-md">
             2026 Design to <span className="font-ber"> Code</span>
           </h1>
         </div>

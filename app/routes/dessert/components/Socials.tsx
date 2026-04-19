@@ -14,13 +14,13 @@ export default function Socials() {
 
   return (
     <section className="bg-[#cf1020]/90 w-full flex items-center p-4">
-      <div className="flex flex-col gap-8 md:flex-row items-center justify-between w-full px-10">
+      <div className="flex flex-col gap-8 lg:flex-row items-center justify-between w-full px-10">
         <div className="flex items-center gap-6 ml-10 md:ml-20">
           {socialLinks.map((socials) => (
             <img
               src={socials.socialMediaIcon}
               key={socials.id}
-              className="h-10 w-10"
+              className="h-14 w-14 cursor-pointer hover:bg-white rounded-full p-2"
             />
           ))}
         </div>
@@ -29,7 +29,11 @@ export default function Socials() {
           {terms.map((term, index) => (
             <li
               key={term.id}
-              className={`${index !== terms.length - 1 ? "md:border-r md:pr-6 border-white/60" : ""}`}
+              className={`${
+                index !== terms.length - 1
+                  ? "md:border-r md:pr-6 border-white/60"
+                  : ""
+              } cursor-pointer text-white hover:text-black transition-all duration-300`}
             >
               {term.name}
             </li>

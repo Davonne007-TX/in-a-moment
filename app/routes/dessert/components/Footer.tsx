@@ -1,5 +1,3 @@
-import Socials from "./Socials";
-
 export default function Footer() {
   const footerLinks = [
     {
@@ -60,23 +58,26 @@ export default function Footer() {
     },
   ];
   return (
-    <section className="flex flex-col md:flex-row gap-20 p-20 max-w-7xl mx-auto">
+    <section className="flex flex-col lg:flex-row gap-20 p-20 max-w-7xl mx-auto">
       {footerLinks.map((section, index) => (
         <div key={index} className="flex flex-col gap-4">
-          <h3 className="font-bold font-coin text-lg text-red-500">
+          <h3 className="font-bold font-coin text-2xl text-red-500">
             {section.title}
           </h3>
 
           <ul className="space-y-1 flex flex-col gap-1 font-semibold">
             {section.link.map((link, i) => (
-              <li key={i} className="text-sm hover:underline cursor-pointer">
+              <li
+                key={i}
+                className="text-md md:text-md hover:underline cursor-pointer"
+              >
                 {link}
               </li>
             ))}
           </ul>
         </div>
       ))}
-      <div className="flex gap-2 md:ml-auto">
+      <div className="flex flex-col md:flex-row gap-2 md:ml-auto">
         <img
           src="./images/icon.png"
           className="w-22 h-22 ml-auto"

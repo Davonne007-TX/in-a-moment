@@ -1,6 +1,7 @@
 import { motion } from "motion/react";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import { NavLink } from "react-router";
 
 export default function Header() {
   const [mobileNavigationOpen, setMobileNavigationOpen] = useState(false);
@@ -39,7 +40,7 @@ export default function Header() {
               whileHover={{ scale: 1.05 }}
               className="text-4xl font-coin text-center tracking-wide cursor-pointer mt-1"
             >
-              Brain Freeze Burgers
+              <NavLink to="/">Brain Freeze Burgers</NavLink>
             </motion.h1>
           </motion.div>
 

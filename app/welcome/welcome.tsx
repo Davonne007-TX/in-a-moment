@@ -1,3 +1,4 @@
+import { motion } from "motion/react";
 import { NavLink } from "react-router";
 
 export function Welcome() {
@@ -16,7 +17,11 @@ export function Welcome() {
           </h1>
         </div>
 
-        <ul>
+        <motion.ul
+          initial={{ scale: 0 }}
+          animate={{ scale: 1.33 }}
+          transition={{ duration: 0.9, delay: 0.233 }}
+        >
           {projects.map((project) => (
             <li
               key={project.id}
@@ -25,7 +30,7 @@ export function Welcome() {
               <NavLink to={project.link}>{project.name}</NavLink>
             </li>
           ))}
-        </ul>
+        </motion.ul>
       </div>
     </section>
   );

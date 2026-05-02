@@ -6,12 +6,12 @@ export default function CarnivalHeader() {
 
   const mobileNavBar = [
     { name: "SINCE 1993", id: 1 },
-    { name: "RIDES", id: 1 },
-    { name: "FOOD", id: 2 },
-    { name: "GAMES", id: 3 },
-    { name: "MUSIC", id: 4 },
-    { name: "GALLERY", id: 5 },
-    { name: "TICKETS", id: 6 },
+    { name: "RIDES", id: 2 },
+    { name: "FOOD", id: 3 },
+    { name: "GAMES", id: 4 },
+    { name: "MUSIC", id: 5 },
+    { name: "GALLERY", id: 6 },
+    { name: "TICKETS", id: 7 },
   ];
 
   return (

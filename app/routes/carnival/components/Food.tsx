@@ -1,21 +1,45 @@
-import { ChevronDown, Search } from "lucide-react";
+import LetsSearch from "./LetsSearch";
 
 export default function Food() {
+  const menuItems = [
+    {
+      name: "Popcorn",
+      image: "./images/popcorn.webp",
+      alt: "Popcorn machine, image by Alex Kallgas on Unsplash",
+      id: 1,
+    },
+    {
+      name: "Hot Dog and Fries",
+      image: "./images/hotDog.webp",
+      alt: "Loaded hot dog and fries, image from mr-wdh on Unsplash",
+      id: 2,
+    },
+    {
+      name: "Chili Cheese Fries",
+      image: "./images/cheese.webp",
+
+      alt: "Loaded Chili Cheese Fries and Classic Bacon Cheeseburger and coke, image by Luca Andrade on Pexels",
+      id: 3,
+    },
+
+    {
+      name: "Ice Cream",
+      image: "./images/iceCreamCone.webp",
+      alt: "Ice Cream triple stacked, image by William Alvarez",
+      id: 4,
+    },
+  ];
+
   return (
-    <section className="mt-20 flex flex-col md:flex-row gap-4 p-8">
-      <button className="flex items-center justify-between w-40 p-2 border border-black">
-        <span>Carvings</span>
-        <ChevronDown size={16} />
-      </button>
+    <section>
+      <LetsSearch />
 
-      <button className="flex items-center justify-between w-40 p-2 border border-black">
-        <span>Food Type</span>
-        <ChevronDown size={16} />
-      </button>
-
-      <div className="flex items-center border-b border-black p-2 md:ml-auto">
-        <Search size={16} className="mr-2" />
-        <input type="text" className="outline-none w-full" />
+      <div>
+        <ul className="flex flex-col lg:flex-row gap-8 md:gap-10 p-8">
+          {menuItems.map((item) => (
+            <img src={item.image} className="max-w-xs" key={item.id} />
+          ))}
+        </ul>
       </div>
     </section>
   );

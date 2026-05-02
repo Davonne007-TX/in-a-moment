@@ -8,8 +8,7 @@ export default function CarnivalHero() {
           chili cheese fries, bring your friends and come on down! We got games.
           We got rides. We got music. And the best of all the best hot dogs in
           town. Since 1993, FlavorFest has become a tradition for fun, family,
-          and friends, for the town of Forks. Local business come and showcase
-          their best dishes. Lets eat and have some fun!
+          and friends, for the town of Forks. Lets eat and have some fun!
         </p>
       </div>
     </section>

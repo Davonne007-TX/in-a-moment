@@ -12,7 +12,7 @@ export default function CarnivalHeader() {
       </div>
 
       <div className="flex flex-col gap-2">
-        <img className="w-20 h-20 mx-auto" src="./images/fries.png" />
+        <img className="w-12 h-12 mx-auto" src="./images/logo.png" />
         <h1 className="text-lg text-center font-thin">WE HAVE THE WORKS</h1>
       </div>
 

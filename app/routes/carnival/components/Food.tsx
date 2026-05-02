@@ -15,17 +15,18 @@ export default function Food() {
       id: 2,
     },
     {
-      name: "Chili Cheese Fries",
-      image: "./images/cheese.webp",
+      name: "Carnival",
+      image: "./images/carnival.webp",
 
-      alt: "Loaded Chili Cheese Fries and Classic Bacon Cheeseburger and coke, image by Luca Andrade on Pexels",
+      alt: "Carnival",
       id: 3,
     },
 
     {
-      name: "Ice Cream",
-      image: "./images/iceCreamCone.webp",
-      alt: "Ice Cream triple stacked, image by William Alvarez",
+      name: "Chili Cheese Fries",
+      image: "./images/cheese.webp",
+
+      alt: "Loaded Chili Cheese Fries and Classic Bacon Cheeseburger and coke, image by Luca Andrade on Pexels",
       id: 4,
     },
   ];

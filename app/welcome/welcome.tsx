@@ -4,7 +4,7 @@ import { NavLink } from "react-router";
 export function Welcome() {
   const projects = [
     { name: "Brain Freeze Burgers", link: "/dessert", id: 1 },
-    { name: "tbd", link: "/carnival", id: 2 },
+    { name: "FlavorFest", link: "/carnival", id: 2 },
   ];
 
   return (

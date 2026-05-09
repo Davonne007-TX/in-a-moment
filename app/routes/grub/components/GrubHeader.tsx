@@ -1,3 +1,6 @@
+import { nav } from "motion/react-m";
+import { useNavigate } from "react-router";
+
 export default function GrubHeader() {
   const myGrubHeader = [
     { name: "Menu", id: 1 },
@@ -5,11 +8,20 @@ export default function GrubHeader() {
     { name: "Deals", id: 3 },
     { name: "Locations", id: 4 },
   ];
+
+  const navigate = useNavigate();
+
+  const goToHome = () => {
+    navigate("/");
+  };
   return (
     <header className="w-full">
       <div className="bg-blue-700 w-full items-center p-8">
         <div className="flex justify-between items-center">
-          <h1 className="text-3xl md:text-5xl font-bow text-white">
+          <h1
+            onClick={goToHome}
+            className="text-3xl cursor-pointer md:text-5xl font-bow text-white"
+          >
             Let's Grub
           </h1>
 

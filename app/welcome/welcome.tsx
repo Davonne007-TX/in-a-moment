@@ -5,6 +5,7 @@ export function Welcome() {
   const projects = [
     { name: "Brain Freeze Burgers", link: "/dessert", id: 1 },
     { name: "FlavorFest", link: "/carnival", id: 2 },
+    { name: "Let's Grub", link: "/grub", id: 3 },
   ];
 
   return (

@@ -25,7 +25,7 @@ export default function GrubHeader() {
             Let's Grub
           </h1>
 
-          <ul className="hidden md:flex gap-8 font-white text-serif text-2xl text-white">
+          <ul className="hidden md:flex gap-8  font-sta text-3xl text-white">
             {myGrubHeader.map((header) => (
               <li key={header.id} className="cursor-pointer ">
                 {header.name}

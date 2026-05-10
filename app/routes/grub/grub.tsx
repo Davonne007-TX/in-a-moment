@@ -1,6 +1,7 @@
 import { desc } from "motion/react-client";
 import GrubCard from "./components/GrubCard";
 import GrubHeader from "./components/GrubHeader";
+import GrubHero from "./components/GrubHero";
 
 const grubItems = [
   {
@@ -37,24 +38,30 @@ const grubItems = [
 
 export default function Grub() {
   return (
-    <section className="flex flex-col items-center min-h-screen bg-[url('./images/theSpot.webp')] bg-cover bg-no-repeat">
-      <GrubHeader />
+    <section className="relative flex flex-col items-center min-h-screen bg-[url('./images/theSpot.webp')] bg-cover bg-no-repeat">
+      <div className="absolute inset-0 bg-black/50"></div>
 
-      <div className="bg-white p-10 md:rounded-4xl my-10">
-        <h2 className="font-bold text-3xl text-center font-bow">Menu</h2>
-        <ul className="flex flex-col md:flex-row justify-center items-center mt-10 p-0 gap-10">
-          {grubItems.map((item) => (
-            <GrubCard
-              key={item.id}
-              grubImage={item.image}
-              alt={item.alt}
-              grubTitle={item.title}
-              grubPrice={item.price}
-              grubButton={item.button}
-              grubDescription={item.description}
-            />
-          ))}
-        </ul>
+      <div className="relative z-10 w-full flex flex-col items-center">
+        <GrubHeader />
+        <GrubHero />
+
+        <div className="bg-white p-8 md:rounded-4xl my-10">
+          <h2 className="font-bold text-3xl text-center font-sta">Menu</h2>
+
+          <ul className="flex flex-col md:flex-row justify-center items-center mt-10 p-0 gap-10">
+            {grubItems.map((item) => (
+              <GrubCard
+                key={item.id}
+                grubImage={item.image}
+                alt={item.alt}
+                grubTitle={item.title}
+                grubPrice={item.price}
+                grubButton={item.button}
+                grubDescription={item.description}
+              />
+            ))}
+          </ul>
+        </div>
       </div>
     </section>
   );

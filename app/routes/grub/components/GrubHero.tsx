@@ -1,7 +1,7 @@
 export default function GrubHero() {
   return (
-    <section className="w-full mt-20 md:mt-0 flex justify-center items-center min-h-screen">
-      <div className="max-w-3xl flex flex-col justify-center items-center text-center gap-4 px-4">
+    <section className="w-full mt-20 md:-mt-10 flex justify-center items-center min-h-screen">
+      <div className="max-w-3xl flex flex-col justify-center items-center text-center gap-4 px-4 bg-[#0A0806]/40 p-4">
         <p className="italic text-white text-2xl">
           Est. 1993 in Los Angeles, CA
         </p>
@@ -19,7 +19,7 @@ export default function GrubHero() {
 
         <div className="flex flex-col md:flex-row gap-8">
           <button className="p-2 bg-white hover:scale-105 cursor-pointer text-blue-700 font-bow text-lg">
-            Make a Reservation
+            Download our app
           </button>
 
           <button className="p-2 bg-white hover:scale-105 cursor-pointer text-blue-700 font-bow text-md text-lg">

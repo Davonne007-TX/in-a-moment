@@ -2,6 +2,7 @@ import { desc } from "motion/react-client";
 import GrubCard from "./components/GrubCard";
 import GrubHeader from "./components/GrubHeader";
 import GrubHero from "./components/GrubHero";
+import GrubAbout from "./components/GrubAbout";
 
 const grubItems = [
   {
@@ -44,9 +45,10 @@ export default function Grub() {
       <div className="relative z-10 w-full flex flex-col items-center">
         <GrubHeader />
         <GrubHero />
+        <GrubAbout />
 
         <div className="bg-white p-8 md:rounded-4xl my-10">
-          <h2 className="font-bold text-3xl text-center font-sta">Menu</h2>
+          <h2 className="font-bold text-4xl text-center font-sta">Menu</h2>
 
           <ul className="flex flex-col md:flex-row justify-center items-center mt-10 p-0 gap-10">
             {grubItems.map((item) => (

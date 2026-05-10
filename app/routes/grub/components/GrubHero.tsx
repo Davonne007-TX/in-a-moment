@@ -8,7 +8,7 @@ export default function GrubHero() {
 
         <h1 className="text-7xl tracking-wide font-sta text-white">
           Its about that time, lets get our{" "}
-          <span className="text-blue-600">grub</span> !
+          <span className="text-blue-600">grub on!</span>
         </h1>
 
         <p className="tracking-widest leading-12 text-xl md:text-3xl  text-white p-2">

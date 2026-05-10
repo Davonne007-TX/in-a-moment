@@ -27,7 +27,7 @@ export default function GrubStats() {
       <div className="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-10 text-center">
         {stats.map((stat) => (
           <div key={stat.id} className="space-y-2">
-            <h2 className="text-4xl font-bold font-sta text-white">
+            <h2 className="text-5xl font-bold font-sta text-white">
               {stat.number}
             </h2>
 

@@ -11,7 +11,7 @@ export default function GrubHero() {
           <span className="text-blue-600">grub on!</span>
         </h1>
 
-        <p className="tracking-widest leading-12 text-xl md:text-3xl  text-white p-2">
+        <p className="tracking-widest leading-12 text-xl md:text-2xl  text-white p-2">
           Imagine being on the beach, hanging out with friends, and all of
           sudden you get hungry. Let's Grub is right on the beach for classic
           summer favorites! Lets eat!

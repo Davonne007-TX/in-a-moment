@@ -2,7 +2,7 @@ export default function GrubHero() {
   return (
     <section className="flex justify-center items-center min-h-screen bg-[url('./images/theSpot.webp')] bg-cover bg-no-repeat w-full">
       <div className="max-w-3xl flex flex-col justify-center items-center text-center gap-8 px-4 bg-[#0A0806]/40 p-4">
-        <p className="italic text-white text-2xl">
+        <p className="italic text-white text-2xl mt-10">
           Est. 1993 in Los Angeles, CA
         </p>
 

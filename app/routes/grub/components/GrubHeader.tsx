@@ -3,8 +3,8 @@ import { useNavigate } from "react-router";
 
 export default function GrubHeader() {
   const myGrubHeader = [
-    { name: "Menu", id: 1 },
-    { name: "About Us", id: 2 },
+    { name: "About Us", id: 1 },
+    { name: "Menu", id: 2 },
     { name: "Deals", id: 3 },
     { name: "Locations", id: 4 },
   ];
@@ -16,7 +16,7 @@ export default function GrubHeader() {
   };
   return (
     <header className="w-full">
-      <div className="bg-blue-700 w-full items-center p-8">
+      <div className="bg-blue-700 w-full items-center p-4 md:p-8">
         <div className="flex flex-col md:flex-row justify-between md:items-center gap-4">
           <h1
             onClick={goToHome}

@@ -1,3 +1,4 @@
+import CardMenu from "./CardMenu";
 import GrubCard from "./GrubCard";
 
 export default function GrubFavorites() {
@@ -33,6 +34,86 @@ export default function GrubFavorites() {
       button: "Add to Cart",
     },
   ];
+
+  const grubMenu = [
+    {
+      id: 1,
+      name: "Chili Cheese Fries",
+      description:
+        "Crispy golden fries topped with hearty chili and melted cheddar cheese.",
+      price: 8.99,
+    },
+    {
+      id: 2,
+      name: "Classic Hot Dog",
+      description:
+        "All-beef hot dog served on a toasted bun with ketchup, mustard, and relish.",
+      price: 6.49,
+    },
+    {
+      id: 3,
+      name: "Classic Bacon Cheeseburger",
+      description:
+        "Juicy beef patty topped with crispy bacon, cheddar cheese, lettuce, tomato, and pickles.",
+      price: 12.99,
+    },
+    {
+      id: 4,
+      name: "Chicken Tenders",
+      description:
+        "Hand-breaded chicken tenders served with your choice of dipping sauce.",
+      price: 9.49,
+    },
+    {
+      id: 5,
+      name: "Onion Rings",
+      description:
+        "Thick-cut onion rings battered and fried until crispy and golden.",
+      price: 7.25,
+    },
+    {
+      id: 6,
+      name: "Mozzarella Sticks",
+      description:
+        "Fried mozzarella cheese sticks served with marinara dipping sauce.",
+      price: 8.49,
+    },
+    {
+      id: 7,
+      name: "Philly Cheesesteak",
+      description:
+        "Thinly sliced steak with grilled onions, peppers, and melted provolone cheese on a hoagie roll.",
+      price: 13.5,
+    },
+    {
+      id: 8,
+      name: "Hot Wings",
+      description:
+        "Spicy buffalo wings served with ranch or blue cheese dressing.",
+      price: 11.99,
+    },
+    {
+      id: 9,
+      name: "Caesar Salad",
+      description:
+        "Fresh romaine lettuce tossed with Caesar dressing, parmesan cheese, and croutons.",
+      price: 8.75,
+    },
+    {
+      id: 10,
+      name: "Grilled Chicken Sandwich",
+      description:
+        "Seasoned grilled chicken breast served with lettuce, tomato, and mayo on a brioche bun.",
+      price: 10.99,
+    },
+    {
+      id: 11,
+      name: "Fried Catfish Basket",
+      description:
+        "Southern-style fried catfish fillets served with fries and tartar sauce.",
+      price: 14.25,
+    },
+  ];
   return (
     <div className="bg-white p-8 md:rounded-4xl my-10">
       <h2 className="font-bold text-4xl text-center font-sta">Menu</h2>
@@ -47,6 +128,16 @@ export default function GrubFavorites() {
             grubPrice={item.price}
             grubButton={item.button}
             grubDescription={item.description}
+          />
+        ))}
+      </ul>
+
+      <ul className="mt-20">
+        {grubMenu.map((menu) => (
+          <CardMenu
+            nameOfDish={menu.name}
+            dishPrice={menu.price}
+            dishDescription={menu.description}
           />
         ))}
       </ul>

@@ -145,6 +145,7 @@ export default function GrubFavorites() {
       <ul className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {grubMenu.map((menu) => (
           <CardMenu
+            key={menu.id}
             nameOfDish={menu.name}
             dishPrice={menu.price}
             dishDescription={menu.description}

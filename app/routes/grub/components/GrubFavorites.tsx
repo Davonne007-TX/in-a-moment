@@ -20,7 +20,7 @@ export default function GrubFavorites() {
       alt: "Hot Wings wih a side of fries, image by Joe Boshra on Unsplash.",
       description:
         "Classic Slice of Pizza, your choice of unlimited toppings. Served with a tall glass of beer",
-      price: 2.99,
+      price: 5.99,
       button: "Add to Cart",
     },
     {
@@ -30,7 +30,7 @@ export default function GrubFavorites() {
       alt: "Seasoned chicken tenders with a side of cripsy french fries. Image by poopfishsocks on Unslash.",
       description:
         "A basket full seasond classic chicken tenders with a side of crisp fries, and choice of sauce.",
-      price: 8.99,
+      price: 9.49,
       button: "Add to Cart",
     },
   ];
@@ -55,7 +55,7 @@ export default function GrubFavorites() {
       name: "Classic Bacon Cheeseburger",
       description:
         "Juicy beef patty topped with crispy bacon, cheddar cheese, lettuce, tomato, and pickles.",
-      price: 12.99,
+      price: 10.99,
     },
     {
       id: 4,
@@ -101,9 +101,9 @@ export default function GrubFavorites() {
     },
     {
       id: 10,
-      name: "Grilled Chicken Sandwich",
+      name: "Chicken Sandwich",
       description:
-        "Seasoned grilled chicken breast served with lettuce, tomato, and mayo on a brioche bun.",
+        "Seasoned grilled or crispy chicken breast served with lettuce, tomato, and mayo on a brioche bun.",
       price: 10.99,
     },
     {
@@ -113,10 +113,19 @@ export default function GrubFavorites() {
         "Southern-style fried catfish fillets served with fries and tartar sauce.",
       price: 14.25,
     },
+    {
+      id: 12,
+      name: "Pepperoni Pizza",
+      description:
+        "Hot and cheesy pepperoni pizza with crispy crust and rich tomato sauce.",
+      price: 5.99,
+    },
   ];
   return (
     <div className="bg-white p-8 md:rounded-4xl my-10">
-      <h2 className="font-bold text-4xl text-center font-sta">Menu</h2>
+      <h2 className="font-bold text-4xl text-center font-sta">
+        Classic Favorites
+      </h2>
 
       <ul className="flex flex-col md:flex-row justify-center items-center mt-10 p-0 gap-10">
         {grubItems.map((item) => (
@@ -132,7 +141,8 @@ export default function GrubFavorites() {
         ))}
       </ul>
 
-      <ul className="mt-20">
+      <h2 className="font-bold text-4xl text-center font-sta mt-20">Menu</h2>
+      <ul className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {grubMenu.map((menu) => (
           <CardMenu
             nameOfDish={menu.name}

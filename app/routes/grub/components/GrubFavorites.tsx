@@ -101,7 +101,7 @@ export default function GrubFavorites() {
     },
     {
       id: 10,
-      name: "Chicken Sandwich",
+      name: "Chicken Switch",
       description:
         "Seasoned grilled or crispy chicken breast served with lettuce, tomato, and mayo on a brioche bun.",
       price: 10.99,
@@ -152,6 +152,18 @@ export default function GrubFavorites() {
           />
         ))}
       </ul>
+
+      <div className="flex flex-col  justify-center items-center gap-4 mt-10">
+        <p>Served fresh to order all day, everyday!</p>
+        <div className="flex flex-col md:flex-row gap-4">
+          <button className="border-yellow-300 bg-linear-to-br from-yellow-50 to-orange-100 hover:text-red-500 cursor-pointer hover:text-bold p-4 shadow-lg">
+            View Nutrition Info
+          </button>
+          <button className="border-yellow-300 bg-linear-to-br from-yellow-50 to-orange-100 hover:text-red-500 hover:text-bold cursor-pointer p-4 shadow-lg">
+            Vegan and Gluteen Free Options
+          </button>
+        </div>
+      </div>
     </div>
   );
 }

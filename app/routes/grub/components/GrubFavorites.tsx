@@ -20,7 +20,7 @@ export default function GrubFavorites() {
       alt: "Hot Wings wih a side of fries, image by Joe Boshra on Unsplash.",
       description:
         "Classic Slice of Pizza, your choice of unlimited toppings. Served with a tall glass of beer",
-      price: 5.99,
+      price: 1.99,
       button: "Add to Cart",
     },
     {
@@ -30,7 +30,7 @@ export default function GrubFavorites() {
       alt: "Seasoned chicken tenders with a side of cripsy french fries. Image by poopfishsocks on Unslash.",
       description:
         "A basket full seasond classic chicken tenders with a side of crisp fries, and choice of sauce.",
-      price: 9.49,
+      price: 7.49,
       button: "Add to Cart",
     },
   ];
@@ -41,18 +41,18 @@ export default function GrubFavorites() {
       name: "Chili Cheese Fries",
       description:
         "Crispy golden fries topped with hearty chili and melted cheddar cheese.",
-      price: 8.99,
+      price: 4.99,
     },
     {
       id: 2,
       name: "Classic Hot Dog",
       description:
-        "All-beef hot dog served on a toasted bun with ketchup, mustard, and relish.",
-      price: 6.49,
+        "All-beef hot dog served on a toasted bun with ketchup, mustard, and relish. Comes with a bag of chips and small soda.",
+      price: 3.49,
     },
     {
       id: 3,
-      name: "Classic Bacon Cheeseburger",
+      name: "Classic Cheeseburger",
       description:
         "Juicy beef patty topped with crispy bacon, cheddar cheese, lettuce, tomato, and pickles.",
       price: 10.99,
@@ -62,63 +62,63 @@ export default function GrubFavorites() {
       name: "Chicken Tenders",
       description:
         "Hand-breaded chicken tenders served with your choice of dipping sauce.",
-      price: 9.49,
+      price: 7.49,
     },
     {
       id: 5,
       name: "Onion Rings",
       description:
         "Thick-cut onion rings battered and fried until crispy and golden.",
-      price: 7.25,
+      price: 4.25,
     },
     {
       id: 6,
       name: "Mozzarella Sticks",
       description:
         "Fried mozzarella cheese sticks served with marinara dipping sauce.",
-      price: 8.49,
+      price: 3.49,
     },
     {
       id: 7,
       name: "Philly Cheesesteak",
       description:
         "Thinly sliced steak with grilled onions, peppers, and melted provolone cheese on a hoagie roll.",
-      price: 13.5,
+      price: 12.5,
     },
     {
       id: 8,
       name: "Hot Wings",
       description:
-        "Spicy buffalo wings served with ranch or blue cheese dressing.",
-      price: 11.99,
+        "Spicy buffalo wings served with ranch or blue cheese dressing, large fry and drink.",
+      price: 13.99,
     },
     {
       id: 9,
       name: "Caesar Salad",
       description:
         "Fresh romaine lettuce tossed with Caesar dressing, parmesan cheese, and croutons.",
-      price: 8.75,
+      price: 6.75,
     },
     {
       id: 10,
       name: "Chicken Switch",
       description:
         "Seasoned grilled or crispy chicken breast served with lettuce, tomato, and mayo on a brioche bun.",
-      price: 10.99,
+      price: 9.99,
     },
     {
       id: 11,
       name: "Fried Catfish Basket",
       description:
         "Southern-style fried catfish fillets served with fries and tartar sauce.",
-      price: 14.25,
+      price: 10.25,
     },
     {
       id: 12,
       name: "Pepperoni Pizza",
       description:
         "Hot and cheesy pepperoni pizza with crispy crust and rich tomato sauce.",
-      price: 5.99,
+      price: 1.99,
     },
   ];
   return (

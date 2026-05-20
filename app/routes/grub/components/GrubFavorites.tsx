@@ -9,7 +9,7 @@ export default function GrubFavorites() {
       alt: "Cheeseburger with grilled onions, tomatoe, letuce, cheese, bacon, with a side of curly fries. Image by amanda-lim on Unsplash.",
       description:
         "Delicious juicy cheeseburger with grilled onions, with a side of curly fries.",
-      price: 10.99,
+      price: 2.99,
       button: "Add to Cart",
     },
     {
@@ -29,16 +29,14 @@ export default function GrubFavorites() {
       alt: "Seasoned chicken tenders with a side of cripsy french fries. Image by poopfishsocks on Unslash.",
       description:
         "A basket full seasond classic chicken tenders with a side of crisp fries, and choice of sauce.",
-      price: 7.49,
+      price: 3.49,
       button: "Add to Cart",
     },
   ];
 
   return (
     <div className="border border-yellow-300 bg-linear-to-br from-yellow-50 to-orange-100 p-8 md:rounded-4xl my-10">
-      <h2 className="font-bold text-4xl text-center font-sta">
-        Classic Favorites
-      </h2>
+      <h2 className="font-bold text-4xl text-center font-sta">Classic Deals</h2>
 
       <ul className="flex flex-col md:flex-row justify-center items-center mt-10 p-0 gap-10">
         {grubItems.map((item) => (

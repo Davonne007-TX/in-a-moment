@@ -11,3 +11,8 @@
   --font-bow: "Bowlby One", sans-serif;
   --font-sta: "Staatliches", sans-serif;
 }
+
+body,
+html {
+  background-color: #faf9f6;
+}

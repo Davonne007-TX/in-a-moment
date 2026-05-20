@@ -7,9 +7,9 @@ export default function GrubHeader() {
 
   const myGrubHeader = [
     { name: "About Us", id: 1 },
-    { name: "Menu", id: 2 },
-    { name: "Deals", id: 3 },
-    { name: "Locations", id: 4 },
+    { name: "Deals", id: 2 },
+    { name: "Menu", id: 3 },
+    { name: "Contact", id: 4 },
   ];
 
   const navigate = useNavigate();

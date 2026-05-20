@@ -21,14 +21,14 @@ export default function GrubMenu() {
       name: "Classic Cheeseburger",
       description:
         "Juicy beef patty topped with crispy bacon, cheddar cheese, lettuce, tomato, and pickles.",
-      price: 10.99,
+      price: 2.99,
     },
     {
       id: 4,
       name: "Chicken Tenders",
       description:
-        "Hand-breaded chicken tenders served with your choice of dipping sauce.",
-      price: 7.49,
+        "Hand-breaded fried chicken tenders served with your choice of dipping sauce, fries and a drink",
+      price: 3.49,
     },
     {
       id: 5,
@@ -101,8 +101,8 @@ export default function GrubMenu() {
         ))}
       </ul>
 
-      <div className="flex flex-col  justify-center items-center gap-4 mt-10">
-        <p>Served fresh to order all day, everyday!</p>
+      <div className="flex flex-col justify-center items-center gap-4 mt-20">
+        <p className="text-2xl">Served fresh to order all day, everyday!</p>
         <div className="flex flex-col md:flex-row gap-4">
           <button className="border-yellow-300 bg-linear-to-br from-yellow-50 to-orange-100 hover:text-red-500 cursor-pointer hover:text-bold p-4 shadow-lg">
             View Nutrition Info

@@ -62,12 +62,12 @@ export default function GrubHeader() {
       </div>
 
       {isNavOpen && (
-        <div className="md:hidden bg-[#0A0806] p-4">
+        <div className="md:hidden bg-[#FF6B4A] p-4">
           <ul className="flex flex-col gap-4 text-white text-2xl font-sta">
             {myGrubHeader.map((header) => (
               <li
                 key={header.id}
-                className="cursor-pointer hover:text-[#FF6B4A] transition"
+                className="cursor-pointer hover:text-black transition"
               >
                 {header.name}
               </li>

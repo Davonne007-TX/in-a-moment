@@ -16,18 +16,18 @@ export default function GrubCard({
   grubButton,
 }: GrubProps) {
   return (
-    <section className="flex flex-col gap-4">
+    <section className="flex flex-col gap-4 border border-yellow-300 bg-linear-to-br from-yellow-50 to-orange-100 p-10 shadow-lg transition-all duration-300">
       <img
         src={grubImage}
         alt={alt}
-        className="max-w-2xs md:w-96 rounded-2xl"
+        className="max-w-3xs md:w-96 rounded-2xl"
       />
       <h2 className="text-2xl font-bold mt-4">{grubTitle}</h2>
       <p className="text-xl max-w-xs font-thin">{grubDescription}</p>
       <div className="flex gap-4">
         {" "}
-        <p className="text-2xl">${grubPrice}</p>
-        <button className="bg-[#0A0806] hover:scale-105 cursor-pointer w-40 p-2 text-white rounded-full">
+        <p className="text-xl">${grubPrice}</p>
+        <button className="bg-[#0A0806] hover:scale-105 cursor-pointer w-40 p-1 text-white rounded-full text-sm md:text-lg ">
           {grubButton}
         </button>
       </div>

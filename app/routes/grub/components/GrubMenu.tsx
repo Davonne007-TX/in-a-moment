@@ -102,12 +102,14 @@ export default function GrubMenu() {
       </ul>
 
       <div className="flex flex-col justify-center items-center gap-4 mt-20">
-        <p className="text-2xl">Served fresh to order all day, everyday!</p>
+        <p className="text-2xl text-center">
+          Served fresh to order all day, everyday!
+        </p>
         <div className="flex flex-col md:flex-row gap-4">
-          <button className="border-yellow-300 bg-linear-to-br from-yellow-50 to-orange-100 hover:text-red-500 cursor-pointer hover:text-bold p-4 shadow-lg">
+          <button className="border-yellow-300 bg-linear-to-br from-yellow-50 to-orange-100 hover:text-red-500 cursor-pointer hover:font-bold p-4 shadow-lg">
             View Nutrition Info
           </button>
-          <button className="border-yellow-300 bg-linear-to-br from-yellow-50 to-orange-100 hover:text-red-500 hover:text-bold cursor-pointer p-4 shadow-lg">
+          <button className="border-yellow-300 bg-linear-to-br from-yellow-50 to-orange-100 hover:text-red-500 hover:font-bold cursor-pointer p-4 shadow-lg">
             Vegan and Gluteen Free Options
           </button>
         </div>

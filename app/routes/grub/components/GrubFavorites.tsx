@@ -18,7 +18,7 @@ export default function GrubFavorites() {
       image: "./images/pizza.webp",
       alt: "Hot Wings wih a side of fries, image by Joe Boshra on Unsplash.",
       description:
-        "Classic Slice of Pizza, your choice of unlimited toppings. Served with a tall glass of beer",
+        "Classic Slice of Pizza, your choice of unlimited toppings. Cooked to perfection.",
       price: 1.99,
       button: "Add to Cart",
     },
@@ -35,7 +35,7 @@ export default function GrubFavorites() {
   ];
 
   return (
-    <div className="border border-yellow-300 bg-linear-to-br from-yellow-50 to-orange-100 p-8 md:rounded-4xl my-10">
+    <div className="max-w-xs p-8 my-10">
       <h2 className="font-bold text-4xl text-center font-sta">Classic Deals</h2>
 
       <ul className="flex flex-col md:flex-row justify-center items-center mt-10 p-0 gap-10">

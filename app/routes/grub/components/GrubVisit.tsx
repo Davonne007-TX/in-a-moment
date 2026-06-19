@@ -8,8 +8,8 @@ export default function GrubVisit() {
         At The Beach
       </h2>
 
-      <div className="flex justify-center items-center gap-10">
-        <div className="flex flex-col justify-center items-center gap-10 mt-40">
+      <div className="flex flex-col md:flex-row justify-center items-center gap-8">
+        <div className="flex flex-col justify-center items-center mt-40">
           <div className="bg-white max-w-md rounded-3xl p-10">
             <div className="flex flex-col gap-2 items-center justify-center">
               <img src="./images/location.png" />

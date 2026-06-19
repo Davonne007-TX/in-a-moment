@@ -16,7 +16,7 @@ export default function CardMenu({
           {nameOfDish}
         </h2>
 
-        <span className="rounded-full bg-red-500 px-3 py-1 text-sm font-bold text-white shadow-md">
+        <span className="rounded-full bg-[#FF6B4A] px-3 py-1 text-sm font-bold text-white shadow-md">
           ${dishPrice.toFixed(2)}
         </span>
       </div>

@@ -27,7 +27,7 @@ export default function GrubCard({
       <div className="flex gap-4">
         {" "}
         <p className="text-xl">${grubPrice}</p>
-        <button className="bg-[#0A0806] hover:scale-105 cursor-pointer w-40 p-1 text-white rounded-full text-sm md:text-lg ">
+        <button className="bg-[#FF6B4A] hover:scale-105 cursor-pointer w-40 p-1 text-white rounded-full text-sm md:text-lg ">
           {grubButton}
         </button>
       </div>

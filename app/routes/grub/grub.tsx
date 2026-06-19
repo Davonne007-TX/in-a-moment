@@ -4,6 +4,7 @@ import GrubAbout from "./components/GrubAbout";
 import GrubFavorites from "./components/GrubFavorites";
 import GrubVisit from "./components/GrubVisit";
 import GrubMenu from "./components/GrubMenu";
+import GrubFooter from "./components/GrubFooter";
 
 export default function Grub() {
   return (
@@ -17,6 +18,7 @@ export default function Grub() {
         <GrubFavorites />
         <GrubMenu />
         <GrubVisit />
+        <GrubFooter />
       </div>
     </section>
   );

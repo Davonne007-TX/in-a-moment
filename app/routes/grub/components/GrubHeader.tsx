@@ -20,19 +20,19 @@ export default function GrubHeader() {
 
   return (
     <header className="w-full">
-      <div className="bg-blue-700 w-full p-4 md:p-8">
+      <div className="bg-[#FFFAFA] w-full p-4 md:p-8">
         <div className="flex flex-col md:flex-row justify-between md:items-center gap-4">
           <div className="flex items-center justify-between w-full md:w-auto">
             <h1
               onClick={goToHome}
-              className="text-2xl sm:text-3xl md:text-5xl cursor-pointer font-bow text-white"
+              className="text-3xl sm:text-3xl md:text-5xl cursor-pointer font-bow text-[#FF6B4A]"
             >
               Let's Grub
             </h1>
 
             <button
               onClick={() => setIsNavOpen(!isNavOpen)}
-              className="md:hidden text-white p-2"
+              className="md:hidden text-[#FF6B4A] p-2"
             >
               <Menu size={32} />
             </button>
@@ -42,7 +42,7 @@ export default function GrubHeader() {
             {myGrubHeader.map((header) => (
               <li
                 key={header.id}
-                className="cursor-pointer hover:text-gray-200 transition"
+                className="cursor-pointer  hover:underline hover:text-[#0E4749] transition duration-300 text-[#FF6B4A]"
               >
                 {header.name}
               </li>
@@ -50,11 +50,11 @@ export default function GrubHeader() {
           </ul>
 
           <div className="flex gap-2 md:gap-4">
-            <button className="px-3 py-2 md:px-4 md:py-3 bg-white hover:scale-105 transition cursor-pointer text-blue-700 font-bow text-sm md:text-base rounded">
+            <button className="border px-3 py-2 md:px-4 md:py-3 bg-white hover:scale-105 transition cursor-pointer text-[#FF6B4A] font-bow text-sm md:text-base rounded">
               Order Now
             </button>
 
-            <button className="px-3 py-2 md:px-4 md:py-3 bg-white hover:scale-105 transition cursor-pointer text-blue-700 font-bow text-sm md:text-base rounded">
+            <button className="border px-3 py-2 md:px-4 md:py-3 bg-white hover:scale-105 transition cursor-pointer text-[#FF6B4A] font-bow text-sm md:text-base rounded">
               Delivery
             </button>
           </div>
@@ -67,7 +67,7 @@ export default function GrubHeader() {
             {myGrubHeader.map((header) => (
               <li
                 key={header.id}
-                className="cursor-pointer hover:text-blue-400 transition"
+                className="cursor-pointer hover:text-[#FF6B4A] transition"
               >
                 {header.name}
               </li>

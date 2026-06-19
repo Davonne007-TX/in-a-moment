@@ -1,28 +1,50 @@
 export default function GrubHero() {
   return (
-    <section className="flex justify-center items-center min-h-screen bg-[url('./images/theSpot.webp')] bg-cover bg-no-repeat w-full">
-      <div className="max-w-3xl flex flex-col justify-center items-center text-center gap-8 px-4 bg-[#0A0806]/40 p-4">
-        <p className="italic text-white text-2xl mt-10">
+    <section className="relative flex justify-center items-center min-h-screen w-full overflow-hidden bg-[#0E4749]">
+      <div className="absolute inset-0">
+        <img
+          src="./images/theSpot.webp"
+          alt=""
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-[#0E4749]/60" />
+        <div className="absolute inset-0 bg-linear-to-b from-[#0E4749]/80 via-[#0E4749]/30 to-[#0E4749]/90" />
+      </div>
+
+      <div className="relative z-10 max-w-3xl flex flex-col justify-center items-center text-center gap-6 px-2">
+        <p className="font-sta text-xs md:text-sm tracking-[0.3em] uppercase text-[#FF6B4A]">
           Est. 1993 in Los Angeles, CA
         </p>
 
-        <h1 className="text-7xl tracking-wide font-sta text-white">
-          Its about that time lets get our{" "}
-          <span className="text-blue-600">grub on!</span>
+        <h1 className="text-5xl md:text-7xl tracking-wide font-sta text-[#F7F1E6] leading-[0.95]">
+          It's about that time, let's get our{" "}
+          <span className="text-[#FF6B4A]">grub on!</span>
         </h1>
 
-        <p className="tracking-widest leading-12 text-xl md:text-2xl text-white max-w-2xl">
-          Imagine being on the beach, hanging out with friends, and all of
+        <svg width="120" height="2" viewBox="0 0 120 2" aria-hidden="true">
+          <line
+            x1="0"
+            y1="1"
+            x2="120"
+            y2="1"
+            stroke="#FF6B4A"
+            strokeWidth="2"
+            strokeDasharray="1 5"
+          />
+        </svg>
+
+        <p className="leading-relaxed text-lg md:text-xl text-[#F7F1E6]/80 max-w-2xl">
+          Imagine being on the beach, hanging out with friends, and all of a
           sudden you get hungry. Let's Grub is right on the beach for classic
-          summer favorites! Lets eat!
+          summer favorites. Let's eat!
         </p>
 
-        <div className="flex flex-col md:flex-row gap-8">
-          <button className="p-2 bg-white hover:scale-105 cursor-pointer text-blue-700 font-bow text-lg">
+        <div className="flex flex-col md:flex-row gap-4 mt-4">
+          <button className="px-7 py-3 bg-[#F7F1E6] hover:bg-white hover:scale-105 transition-all cursor-pointer text-[#FF6B4A] font-bow text-base rounded-full shadow-lg">
             Download our app
           </button>
 
-          <button className="p-2 bg-white hover:scale-105 cursor-pointer text-blue-700 font-bow text-md text-lg">
+          <button className="px-7 py-3 bg-transparent border-2 border-[#F7F1E6]/40 hover:border-[#FF6B4A] hover:scale-105 transition-all cursor-pointer text-[#F7F1E6] font-bow text-base rounded-full">
             Explore Menu
           </button>
         </div>

@@ -6,11 +6,12 @@ export function Welcome() {
     { name: "Brain Freeze Burgers", link: "/dessert", id: 1 },
     { name: "FlavorFest", link: "/carnival", id: 2 },
     { name: "Let's Grub", link: "/grub", id: 3 },
+    { name: "Jas's Donuts", link: "/donuts", id: 4 },
   ];
 
   return (
     <section className="bg-purple-600 bg-cover min-h-screen flex items-center justify-center">
-      <div className="flex flex-col justify-center items-center">
+      <div className="flex flex-col justify-center items-center min-h-screen">
         <div className="flex flex-col md:flex-row md:gap-10 justify-center items-center">
           <img
             src="/images/me.webp"

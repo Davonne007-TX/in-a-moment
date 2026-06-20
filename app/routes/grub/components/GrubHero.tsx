@@ -11,7 +11,7 @@ export default function GrubHero() {
         <div className="absolute inset-0 bg-linear-to-b from-[#0E4749]/80 via-[#0E4749]/30 to-[#0E4749]/90" />
       </div>
 
-      <div className="relative z-10 max-w-3xl flex flex-col justify-center items-center text-center gap-6 mb-3">
+      <div className="relative z-10 max-w-3xl flex flex-col justify-center items-center text-center gap-6 mb-3 md:mb-20">
         <p className="font-sta text-xs md:text-sm tracking-[0.3em] uppercase text-[#FF6B4A]">
           Est. 1993 in Los Angeles, CA
         </p>

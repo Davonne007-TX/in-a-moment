@@ -11,7 +11,7 @@ export default function Grub() {
     <section className="relative flex flex-col items-center min-h-screen">
       <div className="absolute inset-0"></div>
 
-      <div className="relative z-10 w-full flex flex-col items-center">
+      <div className="relative z-10 w-full flex flex-col">
         <GrubHeader />
         <GrubHero />
         <GrubAbout />

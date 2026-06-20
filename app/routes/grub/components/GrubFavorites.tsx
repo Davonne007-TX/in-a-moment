@@ -35,7 +35,7 @@ export default function GrubFavorites() {
   ];
 
   return (
-    <div className="max-w-xs p-8 my-10">
+    <section className=" p-4 my-18 flex flex-col justify-center items-center">
       <h2 className="font-bold text-4xl text-center font-sta">Classic Deals</h2>
 
       <ul className="flex flex-col md:flex-row justify-center items-center mt-10 p-0 gap-10">
@@ -51,6 +51,6 @@ export default function GrubFavorites() {
           />
         ))}
       </ul>
-    </div>
+    </section>
   );
 }

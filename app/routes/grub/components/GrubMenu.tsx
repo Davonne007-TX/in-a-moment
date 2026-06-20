@@ -88,7 +88,7 @@ export default function GrubMenu() {
     },
   ];
   return (
-    <section>
+    <section className="max-w-7xl mx-auto">
       <h2 className="font-bold text-4xl text-center font-sta mt-20">Menu</h2>
       <ul className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {grubMenu.map((menu) => (

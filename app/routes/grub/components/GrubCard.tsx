@@ -20,7 +20,7 @@ export default function GrubCard({
       <img
         src={grubImage}
         alt={alt}
-        className="max-w-3xs md:w-96 rounded-2xl"
+        className="max-w-2xs md:w-96 rounded-2xl mx-auto"
       />
       <h2 className="text-2xl font-bold mt-4">{grubTitle}</h2>
       <p className="text-xl max-w-xs font-thin">{grubDescription}</p>

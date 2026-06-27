@@ -9,7 +9,7 @@ export default function GrubVisit() {
         />
       </div>
 
-      <div className="relative z-10 px-6 py-24 md:py-32">
+      <div className="relative z-10 px-6 py-24 md:py-32 mt-10">
         <div className="text-center max-w-2xl mx-auto mb-20">
           <p className="font-sta text-sm md:text-base tracking-[0.3em] uppercase text-[#FF6B4A] mb-4">
             Find your way to us

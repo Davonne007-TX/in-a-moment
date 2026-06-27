@@ -32,7 +32,7 @@ export default function GrubHeader() {
 
             <button
               onClick={() => setIsNavOpen(!isNavOpen)}
-              className="md:hidden text-[#FF6B4A] p-2"
+              className="md:hidden text-[#FF6B4A] p-2 cursor-pointer"
             >
               <Menu size={32} />
             </button>

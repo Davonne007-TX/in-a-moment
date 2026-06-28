@@ -2,25 +2,23 @@ import GrubSubscribe from "./GrubSubscribe";
 
 export default function GrubFooter() {
   return (
-    <footer>
-      <div className="w-full mx-auto bg-[#1B1212] p-10">
-        <div className="flex justify-between p-2 py-10">
-          <h3 className="text-3xl md:text-5xl cursor-pointer font-bow text-[#FF6B4A]">
-            Let's Grub
-          </h3>
+    <footer className="bg-[#FFFAFA] mx-auto">
+      <div className="max-w-7xl px-6 md:px-10 py-16 md:py-12">
+        <div className="flex flex-col md:flex-row md:items-end md:justify-betweeen gap-8 space-x-40">
+          <div className="space-y-4">
+            <h1 className="font-bow text-4xl md:text-6xl text-[#FF6B4A] tracking-tight">
+              Let's Grub
+            </h1>
+            <p className="max-w-xl text-lg md:text-xl text-[#8B5E55] leading-relaxed">
+              It's Summer Summer time. Grab your friends, hit the beach, and get
+              some grub.
+            </p>
+          </div>
 
-          <p className="text-3xl md:text-xl font-bow text-[#FF6B4A]">
-            It's Summer, it's time to go to the beach
-            <br />
-            and get our grub on!
-          </p>
+          <div className="w-full md:w-auto">
+            <GrubSubscribe />
+          </div>
         </div>
-
-        <div
-          style={{ height: "1px", backgroundColor: "#000000", width: "100%" }}
-        ></div>
-
-        <GrubSubscribe />
       </div>
     </footer>
   );

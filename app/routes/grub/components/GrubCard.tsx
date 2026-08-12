@@ -1,3 +1,20 @@
+import { motion } from "motion/react";
+
+const cardVariants = {
+  hidden: {
+    opacity: 0,
+    y: 15,
+  },
+  visible: {
+    opacity: 1,
+    y: 15,
+    transition: {
+      duration: 0.45,
+      ease: "easeOut",
+    },
+  },
+};
+
 type GrubProps = {
   grubTitle: string;
   grubDescription: string;
@@ -16,7 +33,10 @@ export default function GrubCard({
   grubButton,
 }: GrubProps) {
   return (
-    <section className="flex flex-col gap-4 border border-yellow-300 bg-linear-to-br from-yellow-50 to-orange-100 p-10 shadow-lg transition-all duration-300">
+    <motion.section
+      variants={cardVariants}
+      className="flex flex-col gap-4 border border-yellow-300 bg-linear-to-br from-yellow-50 to-orange-100 p-10 shadow-lg transition-all duration-300"
+    >
       <img
         src={grubImage}
         alt={alt}
@@ -31,6 +51,6 @@ export default function GrubCard({
           {grubButton}
         </button>
       </div>
-    </section>
+    </motion.section>
   );
 }

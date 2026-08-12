@@ -1,5 +1,14 @@
 import GrubCard from "./GrubCard";
+import { motion } from "motion/react";
 
+const containerVariants = {
+  hidden: {},
+  visible: {
+    transition: {
+      staggerChildren: 0.2,
+    },
+  },
+};
 export default function GrubFavorites() {
   const grubItems = [
     {
@@ -36,9 +45,23 @@ export default function GrubFavorites() {
 
   return (
     <section className=" p-4 my-18 flex flex-col justify-center items-center">
-      <h2 className="font-bold text-4xl text-center font-sta">Classic Deals</h2>
+      <motion.h2
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.5 }}
+        className="font-bold text-4xl text-center font-sta"
+      >
+        Classic Deals
+      </motion.h2>
 
-      <ul className="flex flex-col md:flex-row justify-center items-center mt-10 p-0 gap-10">
+      <motion.ul
+        variants={containerVariants}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.2 }}
+        className="flex flex-col md:flex-row justify-center items-center mt-10 p-0 gap-10"
+      >
         {grubItems.map((item) => (
           <GrubCard
             key={item.id}
@@ -50,7 +73,7 @@ export default function GrubFavorites() {
             grubDescription={item.description}
           />
         ))}
-      </ul>
+      </motion.ul>
     </section>
   );
 }

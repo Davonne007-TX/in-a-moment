@@ -1,3 +1,4 @@
+import { motion } from "motion/react";
 import CardMenu from "./CardMenu";
 
 export default function GrubMenu() {
@@ -106,12 +107,20 @@ export default function GrubMenu() {
           Served fresh to order all day, everyday!
         </p>
         <div className="flex flex-col md:flex-row gap-4">
-          <button className="border-yellow-300 bg-linear-to-br from-yellow-50 to-orange-100 hover:text-red-500 cursor-pointer hover:font-bold p-4 shadow-lg">
+          <motion.button
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.95 }}
+            className="border-yellow-300 bg-linear-to-br from-yellow-50 to-orange-100 hover:text-red-500 cursor-pointer hover:font-bold p-4 shadow-lg"
+          >
             View Nutrition Info
-          </button>
-          <button className="border-yellow-300 bg-linear-to-br from-yellow-50 to-orange-100 hover:text-red-500 hover:font-bold cursor-pointer p-4 shadow-lg">
+          </motion.button>
+          <motion.button
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.95 }}
+            className="border-yellow-300 bg-linear-to-br from-yellow-50 to-orange-100 hover:text-red-500 hover:font-bold cursor-pointer p-4 shadow-lg"
+          >
             Vegan and Gluteen Free Options
-          </button>
+          </motion.button>
         </div>
       </div>
     </section>

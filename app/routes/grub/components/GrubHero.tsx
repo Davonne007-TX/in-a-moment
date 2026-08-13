@@ -1,3 +1,5 @@
+import { motion } from "motion/react";
+
 export default function GrubHero() {
   return (
     <section className="relative flex justify-center items-center min-h-screen w-full overflow-hidden bg-[#0E4749]">
@@ -39,14 +41,22 @@ export default function GrubHero() {
           summer favorites. Let's eat!
         </p>
 
-        <div className="flex flex-col md:flex-row gap-4 mt-4">
-          <button className="px-7 py-3 bg-[#F7F1E6] hover:bg-white hover:scale-105 transition-all cursor-pointer text-[#FF6B4A] font-bow text-base rounded-full shadow-lg">
+        <div className="flex flex-col md:flex-row gap-6 mt-4">
+          <motion.button
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.95 }}
+            className="px-7 py-2 bg-[#F7F1E6] hover:bg-white cursor-pointer text-[#FF6B4A] font-bow text-base rounded-full shadow-lg"
+          >
             Download our app
-          </button>
+          </motion.button>
 
-          <button className="px-7 py-3 bg-transparent border-2 border-[#F7F1E6]/40 hover:border-[#FF6B4A] hover:scale-105 transition-all cursor-pointer text-[#F7F1E6] font-bow text-base rounded-full">
+          <motion.button
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.95 }}
+            className="px-7 py-2 bg-transparent border-2 border-[#F7F1E6]/40 hover:bg-[#FF6B4A] hover:scale-105 transition-all cursor-pointer text-[#F7F1E6] font-bow text-base rounded-full"
+          >
             Explore Menu
-          </button>
+          </motion.button>
         </div>
       </div>
     </section>

@@ -5,7 +5,7 @@ const containerVariants = {
   hidden: {},
   visible: {
     transition: {
-      staggerChildren: 0.2,
+      staggerChildren: 0.3,
     },
   },
 };
@@ -55,7 +55,7 @@ export default function GrubFavorites() {
         Classic Deals
       </motion.h2>
 
-      <motion.ul
+      <motion.li
         variants={containerVariants}
         initial="hidden"
         whileInView="visible"
@@ -73,7 +73,7 @@ export default function GrubFavorites() {
             grubDescription={item.description}
           />
         ))}
-      </motion.ul>
+      </motion.li>
     </section>
   );
 }

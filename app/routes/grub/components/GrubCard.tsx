@@ -9,8 +9,8 @@ const cardVariants = {
     opacity: 1,
     y: 15,
     transition: {
-      duration: 0.45,
-      ease: "easeOut",
+      duration: 2.5,
+      ease: "easeOut" as const,
     },
   },
 };
@@ -37,11 +37,7 @@ export default function GrubCard({
       variants={cardVariants}
       className="flex flex-col gap-4 border border-yellow-300 bg-linear-to-br from-yellow-50 to-orange-100 p-10 shadow-lg transition-all duration-300"
     >
-      <img
-        src={grubImage}
-        alt={alt}
-        className="max-w-2xs md:w-96 rounded-2xl mx-auto"
-      />
+      <img src={grubImage} alt={alt} className=" mx-auto" />
       <h2 className="text-2xl font-bold mt-4">{grubTitle}</h2>
       <p className="text-xl max-w-xs font-thin">{grubDescription}</p>
       <div className="flex gap-4">

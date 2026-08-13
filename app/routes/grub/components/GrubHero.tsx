@@ -44,7 +44,7 @@ export default function GrubHero() {
             Download our app
           </button>
 
-          <button className="px-7 py-3 bg-transparent border-2 border-[#F7F1E6]/40 hover:border-[#FF6B4A] hover:scale-105 transition-all cursor-pointer text-[#F7F1E6] font-bow text-base rounded-full">
+          <button className="px-7 py-3 bg-transparent border-2 border-[#F7F1E6]/40 hover:bg-[#FF6B4A] hover:scale-105 transition-all cursor-pointer text-[#F7F1E6] font-bow text-base rounded-full">
             Explore Menu
           </button>
         </div>

@@ -1,3 +1,5 @@
+import { motion } from "motion/react";
+
 export default function GrubVisit() {
   return (
     <section className="relative w-full min-h-screen mt-20">
@@ -9,7 +11,25 @@ export default function GrubVisit() {
         />
       </div>
 
-      <div className="relative z-10 px-6 py-24 md:py-32 mt-10">
+      <motion.div
+        initial={{
+          opacity: 0,
+          y: 20,
+        }}
+        whileInView={{
+          opacity: 1,
+          y: 0,
+        }}
+        viewport={{
+          once: true,
+          amount: 0.1,
+        }}
+        transition={{
+          duration: 0.6,
+          ease: "easeOut",
+        }}
+        className="relative z-10 px-6 py-24 md:py-32 mt-10"
+      >
         <div className="text-center max-w-2xl mx-auto mb-20">
           <p className="font-sta text-sm md:text-base tracking-[0.3em] uppercase text-[#FF6B4A] mb-4">
             Find your way to us
@@ -77,7 +97,7 @@ export default function GrubVisit() {
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 }

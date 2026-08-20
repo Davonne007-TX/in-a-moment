@@ -41,6 +41,16 @@ export default function GrubFavorites() {
       price: 3.49,
       button: "Add to Cart",
     },
+    {
+      id: 3,
+      title: "Chicken Tenders",
+      image: "./images/chickenTenders.webp",
+      alt: "Seasoned chicken tenders with a side of cripsy french fries. Image by poopfishsocks on Unslash.",
+      description:
+        "A basket full seasond classic chicken tenders with a side of crisp fries, and choice of sauce.",
+      price: 3.49,
+      button: "Add to Cart",
+    },
   ];
 
   return (
@@ -60,7 +70,7 @@ export default function GrubFavorites() {
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.2 }}
-        className="flex flex-col md:flex-row justify-center items-center mt-10 p-0 gap-10"
+        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 mt-10 p-0 gap-20"
       >
         {grubItems.map((item) => (
           <GrubCard

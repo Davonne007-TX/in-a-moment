@@ -15,28 +15,28 @@ export default function GrubMenu() {
       name: "Classic Hot Dog",
       description:
         "All-beef hot dog served on a toasted bun with ketchup, mustard, and relish. Comes with a bag of chips and small soda.",
-      price: 3.49,
+      price: 4.49,
     },
     {
       id: 3,
       name: "Classic Cheeseburger",
       description:
         "Juicy beef patty topped with crispy bacon, cheddar cheese, lettuce, tomato, and pickles.",
-      price: 2.99,
+      price: 8.99,
     },
     {
       id: 4,
       name: "Chicken Tenders",
       description:
         "Hand-breaded fried chicken tenders served with your choice of dipping sauce, fries and a drink",
-      price: 3.49,
+      price: 7.49,
     },
     {
       id: 5,
       name: "Onion Rings",
       description:
         "Thick-cut onion rings battered and fried until crispy and golden.",
-      price: 4.25,
+      price: 2.25,
     },
     {
       id: 6,
@@ -56,8 +56,8 @@ export default function GrubMenu() {
       id: 8,
       name: "Hot Wings",
       description:
-        "Spicy buffalo wings served with ranch or blue cheese dressing, large fry and drink.",
-      price: 13.99,
+        "Unlimited spicy buffalo wings served with ranch or blue cheese dressing, large fry and drink.",
+      price: 15.99,
     },
     {
       id: 9,
@@ -68,7 +68,7 @@ export default function GrubMenu() {
     },
     {
       id: 10,
-      name: "Chicken Switch",
+      name: "Chicken Sandwhich",
       description:
         "Seasoned grilled or crispy chicken breast served with lettuce, tomato, and mayo on a brioche bun.",
       price: 9.99,
@@ -82,10 +82,10 @@ export default function GrubMenu() {
     },
     {
       id: 12,
-      name: "Pepperoni Pizza",
+      name: "Slices of Pizza",
       description:
-        "Hot and cheesy pepperoni pizza with crispy crust and rich tomato sauce.",
-      price: 1.99,
+        "Hot and fresh unlimited pizza, with crispy crust and rich tomato or white sauce.",
+      price: 12.99,
     },
   ];
   return (

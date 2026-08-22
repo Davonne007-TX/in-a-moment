@@ -5,30 +5,31 @@ const containerVariants = {
   hidden: {},
   visible: {
     transition: {
-      staggerChildren: 0.3,
+      staggerChildren: 0.15,
     },
   },
 };
+
 export default function GrubFavorites() {
   const grubItems = [
     {
       id: 1,
       title: "Classic Cheeseburger",
       image: "./images/burger4.webp",
-      alt: "Cheeseburger with grilled onions, tomatoe, letuce, cheese, bacon, with a side of curly fries. Image by amanda-lim on Unsplash.",
+      alt: "Classic Cheeseburger with grilled onions, tomatoe, letuce, cheese, bacon, with a side of curly fries. Image by amanda-lim on Unsplash.",
       description:
-        "Delicious juicy cheeseburger with grilled onions, with a side of curly fries.",
-      price: 2.99,
+        "Delicious juicy cheeseburger with grilled onions, tomatoe, letuce, cheese, bacon,  with a side of curly fries.",
+      price: 8.99,
       button: "Add to Cart",
     },
     {
       id: 2,
       title: "Pizza",
-      image: "./images/pizza.webp",
-      alt: "Hot Wings wih a side of fries, image by Joe Boshra on Unsplash.",
+      image: "./images/pizza1.webp",
+      alt: "Row of pizzas, we got chicken and peppers, pepporoni and cheese and pineapple and pepporoni, image by Meg Boulden  ",
       description:
-        "Classic Slice of Pizza, your choice of unlimited toppings. Cooked to perfection.",
-      price: 1.99,
+        "Unlimited Slices of Pizza. Cooked to perfection, taste the flavor.",
+      price: 12.99,
       button: "Add to Cart",
     },
     {
@@ -38,17 +39,17 @@ export default function GrubFavorites() {
       alt: "Seasoned chicken tenders with a side of cripsy french fries. Image by poopfishsocks on Unslash.",
       description:
         "A basket full seasond classic chicken tenders with a side of crisp fries, and choice of sauce.",
-      price: 3.49,
+      price: 7.49,
       button: "Add to Cart",
     },
     {
       id: 3,
-      title: "Chicken Tenders",
-      image: "./images/chickenTenders.webp",
-      alt: "Seasoned chicken tenders with a side of cripsy french fries. Image by poopfishsocks on Unslash.",
+      title: "Chicken Sandwich",
+      image: "./images/chickenSandwhich.webp",
+      alt: "Seasoned chicken sandiwich with extra crispyness, specail sauce, lettuce, with a side of cripsy french fries. Image by Hybrid Storytellers on Unslash.",
       description:
-        "A basket full seasond classic chicken tenders with a side of crisp fries, and choice of sauce.",
-      price: 3.49,
+        "Seasond classic grilled or crispy chicken sandwich with secret sauce, lettuce, and pickles, with a side of potatoe wedges.",
+      price: 9.99,
       button: "Add to Cart",
     },
   ];
